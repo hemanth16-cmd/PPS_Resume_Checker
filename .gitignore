@@ -1,13 +1,29 @@
+# Node dependencies & builds
 node_modules/
 .next/
 dist/
 build/
+
+# Environment files
 .env
 .env.*
 !.env.example
+
+# Python environments & cache
 venv/
 .venv/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 .pytest_cache/
+.ruff_cache/
+
+# Streamlit secrets
 .streamlit/secrets.toml
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
