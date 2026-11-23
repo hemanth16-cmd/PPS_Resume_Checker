@@ -51,6 +51,7 @@ const router = createBrowserRouter([
     errorElement: <RouteError />,
     children: [
       { path: "/", element: lazyPage(<Dashboard />) },
+      { path: "/dashboard", element: <Navigate to="/" replace /> },
       { path: "/scan", element: lazyPage(<Scan />) },
       { path: "/scan/:id", element: lazyPage(<ScanResultPage />) },
       { path: "/history", element: lazyPage(<HistoryPage />) },
