@@ -1,16 +1,21 @@
 /// <reference types="vitest/config" />
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: {
-    alias: { "@": path.resolve(import.meta.dirname, "src") },
+    alias: { "@": path.resolve(__dirname, "src") },
   },
   server: { port: 5173 },
   build: {
+    outDir: "dist",
+    emptyOutDir: true,
     // pdf.js (~640 kB) is lazy-loaded only when the Resume preview tab opens.
     chunkSizeWarningLimit: 700,
     rollupOptions: {
