@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Newsreader:wght@100..900&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-bright":"#f8f9fd","surface-dim":"#d8dade","surface":"#f8f9fd","surface-tint":"#416279","on-tertiary-fixed":"#002112","on-secondary-fixed-variant":"#2b4a5f","on-primary-container":"#d0eaff","outline-variant":"#c2c7cd","on-secondary-container":"#47667d","surface-container-highest":"#e1e2e6","error-container":"#ffdad6","tertiary-fixed-dim":"#a0d2b3","inverse-surface":"#2e3134","on-secondary-fixed":"#001e2f","on-primary-fixed-variant":"#284a60","background":"#f8f9fd","surface-container-low":"#f2f3f7","inverse-on-surface":"#eff1f5","on-tertiary-fixed-variant":"#204f38","tertiary-container":"#427158","secondary":"#436278","tertiary-fixed":"#bbeecf","inverse-primary":"#a9cbe5","secondary-fixed-dim":"#abcae4","secondary-fixed":"#c8e6ff","surface-container-lowest":"#ffffff","on-secondary":"#ffffff","on-background":"#191c1f","on-tertiary":"#ffffff","on-error":"#ffffff","primary":"#315369","on-error-container":"#93000a","tertiary":"#2a5841","primary-fixed":"#c8e6ff","primary-fixed-dim":"#a9cbe5","error":"#ba1a1a","on-surface":"#191c1f","on-surface-variant":"#42474c","surface-container":"#eceef2","primary-container":"#4a6b82","on-primary-fixed":"#001e2e","on-primary":"#ffffff","outline":"#72787d","surface-variant":"#e1e2e6","surface-container-high":"#e7e8ec","on-tertiary-container":"#c0f3d3","secondary-container":"#c3e4fe"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin-mobile":"1.25rem","gutter":"1.5rem","margin":"3rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-md":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xl":"2.5rem"},fontFamily:{"body-sm":["Inter"],"label-sm":["Inter"],"metric-display":["Inter"],"headline-lg-mobile":["Newsreader"],"headline-lg":["Newsreader"],"body-md":["Inter"],"headline-sm":["Newsreader"],"display-lg":["Newsreader"],"title-sm":["Inter"],"body-lg":["Newsreader"],"display-lg-mobile":["Newsreader"],"headline-md":["Newsreader"],"label-md":["Inter"],"title-md":["Inter"]},fontSize:{"body-sm":["0.8125rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"label-sm":["0.75rem",{"lineHeight":"1rem","fontWeight":"500"}],"metric-display":["2rem",{"lineHeight":"2.25rem","fontWeight":"600"}],"headline-lg-mobile":["1.625rem",{"lineHeight":"2.125rem","fontWeight":"400"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","fontWeight":"400"}],"body-md":["0.9375rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","fontWeight":"500"}],"display-lg":["3rem",{"lineHeight":"3.5rem","fontWeight":"400"}],"title-sm":["1rem",{"lineHeight":"1.5rem","fontWeight":"600"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"400"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","fontWeight":"400"}],"headline-md":["1.5rem",{"lineHeight":"2rem","fontWeight":"500"}],"label-md":["0.8125rem",{"lineHeight":"1.125rem","fontWeight":"600"}],"title-md":["1.125rem",{"lineHeight":"1.625rem","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low border-r border-outline-variant/30 z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-md border-b border-outline-variant/20 flex items-center gap-space-sm bg-surface-container-lowest"><img alt="PPS4027 Portal Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WqAYLoonOsSzjqBZ6MDAKqtxQaQdYulzo6_FQJcT0l9GahweFqOttsENyytNdlBKzqDolI459ydqm1qRADCWnCChZkwSeh-iu-emqLSgIqeRY63FtIc-ieK9eCDoBOvHVhQZXKZfD5YEMQ3cLYzojr9gbWEOW_Rh-7dIK1CUaQB_-IWAiJJe4lq8MMTg8jx3qOSSx5co2qSS-E-e53D0ubU1sMNXQD59dTby8f-thiUwxtAux_eVceNUn_"/><div class="flex flex-col"><span class="font-title-sm text-title-sm text-primary tracking-tight leading-none">PPS4027</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Placement Training</span></div></div><div class="px-space-md pt-space-md pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Academic Modules</span></div><nav class="flex flex-col gap-1 px-space-sm" data-active-classes="bg-primary text-on-primary font-title-sm rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-primary text-on-primary font-title-sm rounded-lg" data-path="learning" href="#"><span class="material-symbols-outlined text-[20px]">local_library</span><span>Learning</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="calendar" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span>Calendar</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="assignments" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span>Assignments</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="my-progress" href="#"><span class="material-symbols-outlined text-[20px]">trending_up</span><span>My Progress</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="my-results" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span>My Results</span></a></nav><div class="px-space-md pt-space-md pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Account & System</span></div><nav class="flex flex-col gap-1 px-space-sm" data-active-classes="bg-primary text-on-primary font-title-sm rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span>Notifications</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="privacy-data" href="#"><span class="material-symbols-outlined text-[20px]">shield</span><span>Privacy & Data</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="p-space-sm border-t border-outline-variant/30 bg-surface-container-lowest"><div class="flex items-center gap-space-sm p-space-xs rounded-lg border border-outline-variant/30 bg-surface-container-low"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiykzZs64hH-nW8Gb-FdsuvIPQH3c5C0jrYVSuNmPPsYqxqBAoHLBtnzpiXYPo2guX_D4A93NzapXhrrA53tnn1e97QMvSPk9guwtXP-Jgu1iMMExdohqdIYWQKTQmMFf-ldo_WL_RAHMHdDaQdQ7G-wP3X6PpfMlAxpQI64Ch-cfBHUo-37bFn4IewiZGxFGKmxjjaPRyOnx6CQbNUO1TYabc4O4MIscZwptZdVD6EGttATNZTyV27w"/><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface truncate">Aarav Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">PPS-2024-4027</span></div><span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm border border-tertiary/20">Active</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md border-b border-outline-variant/30 z-40 px-gutter flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex items-center gap-space-md"><img alt="PPS4027 Portal Logo" class="h-8 w-auto object-contain md:hidden" src="https://lh3.googleusercontent.com/aida/AEtjO1WqAYLoonOsSzjqBZ6MDAKqtxQaQdYulzo6_FQJcT0l9GahweFqOttsENyytNdlBKzqDolI459ydqm1qRADCWnCChZkwSeh-iu-emqLSgIqeRY63FtIc-ieK9eCDoBOvHVhQZXKZfD5YEMQ3cLYzojr9gbWEOW_Rh-7dIK1CUaQB_-IWAiJJe4lq8MMTg8jx3qOSSx5co2qSS-E-e53D0ubU1sMNXQD59dTby8f-thiUwxtAux_eVceNUn_"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface">Good morning, Aarav</span><span class="px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm border border-secondary/20">Batch of 2025</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Week 4 · Module 1: Resume Building</span></div></div><div class="flex items-center gap-space-md"><div class="relative hidden lg:block w-80"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-space-md py-1.5 bg-surface-container-low border border-outline-variant/40 rounded text-on-surface font-body-sm text-body-sm focus:outline-none focus:border-primary placeholder:text-outline" placeholder="Search modules, resources, deadlines..." type="text"/></div><div class="flex items-center bg-surface-container-low border border-outline-variant/40 rounded p-0.5"><button class="px-2 py-1 rounded bg-surface-container-lowest font-label-sm text-label-sm text-primary shadow-[0_1px_2px_rgba(30,33,36,0.04)] font-semibold" type="button">Student View</button><button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">Trainer View</button><button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">Admin View</button></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-xs pl-space-xs border-l border-outline-variant/30"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiykzZs64hH-nW8Gb-FdsuvIPQH3c5C0jrYVSuNmPPsYqxqBAoHLBtnzpiXYPo2guX_D4A93NzapXhrrA53tnn1e97QMvSPk9guwtXP-Jgu1iMMExdohqdIYWQKTQmMFf-ldo_WL_RAHMHdDaQdQ7G-wP3X6PpfMlAxpQI64Ch-cfBHUo-37bFn4IewiZGxFGKmxjjaPRyOnx6CQbNUO1TYabc4O4MIscZwptZdVD6EGttATNZTyV27w"/><span class="hidden xl:inline font-label-md text-label-md text-on-surface">Aarav</span></div></div></header><main class="relative pt-16 bg-background min-h-screen w-full px-gutter py-space-lg"><div class="flex flex-col w-full">
+<!-- Module Selector Navigation Bar -->
+<section class="w-full bg-surface-container-lowest shadow-sm rounded-xl p-space-sm mb-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Active Module 1 -->
+<button class="group text-left p-space-md bg-surface-container-low rounded-lg transition-all relative overflow-hidden" type="button">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Current Phase</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Week 4 of 5</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Module 1: Resume Building</h2>
+<div class="flex items-center gap-space-xs mt-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>Weeks 1–5 · ATS & Profile Craft</span>
+</div>
+</button>
+<!-- Upcoming Module 2 -->
+<button class="group text-left p-space-md bg-surface-container-lowest hover:bg-surface-container-low/60 rounded-lg transition-all opacity-85 hover:opacity-100" type="button">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Upcoming Phase</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Starts Nov 4</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Module 2: GD & Case Studies</h2>
+<div class="flex items-center gap-space-xs mt-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">lock_clock</span>
+<span>Weeks 6–10 · Analytical Rhetoric</span>
+</div>
+</button>
+<!-- Upcoming Module 3 -->
+<button class="group text-left p-space-md bg-surface-container-lowest hover:bg-surface-container-low/60 rounded-lg transition-all opacity-85 hover:opacity-100" type="button">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Final Phase</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Starts Dec 9</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Module 3: Mock Drills & PI</h2>
+<div class="flex items-center gap-space-xs mt-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">event_repeat</span>
+<span>Weeks 11–15 · Technical & HR Panels</span>
+</div>
+</button>
+</div>
+</section>
+<!-- Editorial Section Header -->
+<header class="w-full mb-space-lg flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="max-w-2xl">
+<div class="flex items-center gap-space-xs text-primary mb-1">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Academic Syllabus & Repository</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-normal tracking-tight">Course Content & Learning Library</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+        Curated pedagogical literature, structured masterclass recordings, and CA1 continuous assessment deliverables for Module 1.
+      </p>
+</div>
+<!-- Search & Format Filter Badges -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm w-full md:w-auto">
+<div class="relative min-w-[240px]">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full pl-9 pr-space-md py-2 bg-surface-container-lowest rounded text-on-surface font-body-sm text-body-sm shadow-sm focus:outline-none focus:bg-surface-container-lowest placeholder:text-outline" id="search-input" placeholder="Filter resources or codes..." type="text"/>
+</div>
+<div class="flex items-center gap-1 overflow-x-auto py-1 scrollbar-none">
+<button class="format-filter px-3 py-1.5 rounded bg-primary text-on-primary font-label-sm text-label-sm shadow-sm" data-format="all" type="button">All</button>
+<button class="format-filter px-3 py-1.5 rounded bg-surface-container-lowest hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-colors shadow-sm" data-format="readings" type="button">Readings</button>
+<button class="format-filter px-3 py-1.5 rounded bg-surface-container-lowest hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-colors shadow-sm" data-format="videos" type="button">Videos</button>
+<button class="format-filter px-3 py-1.5 rounded bg-surface-container-lowest hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-colors shadow-sm" data-format="resources" type="button">Resources</button>
+<button class="format-filter px-3 py-1.5 rounded bg-surface-container-lowest hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-colors shadow-sm" data-format="worksheets" type="button">Worksheets</button>
+</div>
+</div>
+</header>
+<!-- Featured Banner ("New This Week") -->
+<section class="w-full relative overflow-hidden rounded-xl bg-surface-container-low shadow-sm p-space-lg mb-space-xl">
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="max-w-3xl">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="px-2.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold tracking-wide">New This Week</span>
+<span class="text-outline font-label-sm text-label-sm">·</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Syllabus Section 1.4</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Week 4: Tailoring Resumes to Role Archetypes & ATS Screening</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-sm leading-relaxed">
+          Deep dive into natural language token parsing, heuristic screening weights, and drafting quantitative outcome statements leveraging the STAR framework across engineering and consulting tracks.
+        </p>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">menu_book</span> Core Reading: 14 pp.</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">timer</span> Est. Commitment: 2.5 hrs</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">assignment_turned_in</span> 1 CA1 Graded Checkpoint</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row lg:flex-col gap-space-sm shrink-0">
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-2.5 rounded bg-primary text-on-primary hover:bg-primary/90 font-label-md text-label-md transition-colors shadow-sm" href="#week-4-content">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+<span>Start Week 4 Reading (18 min)</span>
+</a>
+<button class="inline-flex items-center justify-center gap-space-xs px-space-md py-2 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">download</span>
+<span>Download Weekly Pack (ZIP)</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Two-Column Main Content Layout -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-xl">
+<!-- Left Column: Weekly Curriculum (8 cols on XL) -->
+<main class="xl:col-span-8 flex flex-col gap-space-lg">
+<!-- Week 4: Current Week (Expanded) -->
+<article class="w-full bg-surface-container-lowest shadow-sm rounded-xl overflow-hidden" id="week-4-content">
+<!-- Week Masthead -->
+<div class="p-space-lg bg-surface-container-low flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="flex flex-col items-center justify-center w-12 h-12 rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm shrink-0">
+<span>04</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs mb-0.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Active Syllabus Unit</span>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">In Progress</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tailoring Resumes to Role Archetypes & ATS Systems</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Current focus: Contextual keyword density, STAR metrics, and CA1 continuous evaluation draft.</p>
+</div>
+</div>
+<span class="hidden sm:inline-flex px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant shrink-0">
+            6 Modules Included
+          </span>
+</div>
+<!-- Weekly Progress Bar -->
+<div class="w-full bg-surface-container-high h-1">
+<div class="bg-primary h-1" style="width: 45%;"></div>
+</div>
+<!-- Content Item Rows -->
+<div class="flex flex-col p-space-sm divide-y-0">
+<!-- Item 1: Reading Material -->
+<div class="content-item group p-space-md hover:bg-surface-container-low/60 rounded-lg transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-space-md" data-category="readings">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-on-surface shrink-0 group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[22px]">article</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm font-semibold text-outline uppercase tracking-wider">Reading Material</span>
+<span class="text-outline">·</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">PDF · 14 pages · 18 min read</span>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors">Deconstructing Modern ATS Algorithms & Parse Trees</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Understand how Taleo, Workday, and Greenhouse digest text hierarchies, table tags, and semantic skills clusters.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm sm:self-center self-end shrink-0">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Completed
+              </span>
+<button aria-label="Download Reading Material" class="p-1.5 text-outline hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Video Lecture -->
+<div class="content-item group p-space-md hover:bg-surface-container-low/60 rounded-lg transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-space-md" data-category="videos">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-on-surface shrink-0 group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[22px]">play_lesson</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm font-semibold text-outline uppercase tracking-wider">Masterclass Lecture</span>
+<span class="text-outline">·</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Video Recording · 32 mins</span>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors">Quantifying Impact in Academic Projects (STAR Format)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Prof. Nandita Roy guides students through converting laboratory results and capstone code into recruiter metrics.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm sm:self-center self-end shrink-0">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Completed
+              </span>
+<button aria-label="Replay Masterclass Lecture" class="p-1.5 text-outline hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">replay</span>
+</button>
+</div>
+</div>
+<!-- Item 3: L&D Resource Package -->
+<div class="content-item group p-space-md hover:bg-surface-container-low/60 rounded-lg transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-space-md" data-category="resources">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-on-surface shrink-0 group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[22px]">folder_zip</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm font-semibold text-outline uppercase tracking-wider">Toolkit & Assets</span>
+<span class="text-outline">·</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pack · LaTeX & DOCX Templates · 2.4 MB</span>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors">PPS4027 Standard Industry CV Template (Overleaf & Word)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Strict single-column baseline typography grid certified for campus placement drives.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm sm:self-center self-end shrink-0">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                Available
+              </span>
+<button aria-label="Download Resource Pack" class="px-3 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+                Download
+              </button>
+</div>
+</div>
+<!-- Item 4: Interactive Worksheet -->
+<div class="content-item group p-space-md bg-secondary-container/20 rounded-lg transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-space-md" data-category="worksheets">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">edit_note</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm font-semibold text-secondary uppercase tracking-wider">Hands-on Worksheet</span>
+<span class="text-outline">·</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Notion Template / Google Doc · Self-Audit</span>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors">Bullet Point Power Verb & Metric Refinement Sheet</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Use the formula: [Action Verb] + [Context & Scope] + [Quantified Result] to polish 6 core bullets.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm sm:self-center self-end shrink-0">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+                In Progress
+              </span>
+<button class="px-3 py-1 rounded bg-primary text-on-primary hover:bg-primary/90 font-label-sm text-label-sm transition-colors shadow-sm" type="button">
+                Open Doc
+              </button>
+</div>
+</div>
+<!-- Item 5: Weekly Quiz -->
+<div class="content-item group p-space-md hover:bg-surface-container-low/60 rounded-lg transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-space-md" data-category="worksheets">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-on-surface shrink-0 group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[22px]">quiz</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm font-semibold text-outline uppercase tracking-wider">Formative Quiz</span>
+<span class="text-outline">·</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">MS Forms · 15 MCQs · Untimed</span>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors">Week 4 MCQ: ATS Compliance & Screening Norms</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Test comprehension on text encoding, optical character recognition rules, and layout taboos.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm sm:self-center self-end shrink-0">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">pending_actions</span>
+                Closes Thu, 11:59 PM
+              </span>
+<button class="px-3 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                Attempt
+              </button>
+</div>
+</div>
+<!-- Item 6: Continuous Assessment Submission -->
+<div class="content-item group p-space-md hover:bg-surface-container-low/60 rounded-lg transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-space-md" data-category="resources">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">assignment_turned_in</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm font-semibold text-error uppercase tracking-wider">Mandatory Deliverable</span>
+<span class="text-outline">·</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Continuous Assessment 1 (CA1)</span>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors">CA1 Draft Submission & Profile Score Card</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Upload single-page tailored PDF. Must score above 78% on placement portal simulated parser.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm sm:self-center self-end shrink-0">
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-medium">
+                Due Oct 28
+              </span>
+<button class="px-3 py-1 rounded bg-primary text-on-primary hover:bg-primary/90 font-label-sm text-label-sm transition-colors shadow-sm" type="button">
+                Open CA1 Portal
+              </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Week 3: Completed (Collapsible) -->
+<article class="w-full bg-surface-container-lowest shadow-sm rounded-xl overflow-hidden">
+<button class="collapsible-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container-low/50 transition-colors" data-target="week-3-body" type="button">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-outline">
+<span>03</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface">Week 3: Core Structure, Typography & Clean Layouts</h3>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">5/5 Completed</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Completed Oct 14 · Visual hierarchy, whitespace economy, and font stacks</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="text-on-surface-variant font-label-sm text-label-sm hidden sm:inline">View Resources</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 chevron-icon">expand_more</span>
+</div>
+</button>
+<div class="hidden p-space-md bg-surface-container-low/30 space-y-space-xs" id="week-3-body">
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">menu_book</span>
+<span class="font-body-sm text-body-sm text-on-surface">Guide: Typographic Hierarchies for Campus Recruiter Fast-Scans (30-Sec Rule)</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">Completed</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">play_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Recorded Masterclass: Avoiding Graphic Bloat, Skill Rating Bars, and Two-Column Trap</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">Completed</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">fact_check</span>
+<span class="font-body-sm text-body-sm text-on-surface">Diagnostic Checklist: Layout Margins, Line Heights, and Section Tagging</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">Completed</span>
+</div>
+</div>
+</article>
+<!-- Week 2: Completed (Collapsible) -->
+<article class="w-full bg-surface-container-lowest shadow-sm rounded-xl overflow-hidden">
+<button class="collapsible-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container-low/50 transition-colors" data-target="week-2-body" type="button">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-outline">
+<span>02</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface">Week 2: Experience & Capstone Articulation</h3>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">5/5 Completed</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Completed Oct 7 · Translating academic lab work and internships to corporate language</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="text-on-surface-variant font-label-sm text-label-sm hidden sm:inline">View Resources</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 chevron-icon">expand_more</span>
+</div>
+</button>
+<div class="hidden p-space-md bg-surface-container-low/30 space-y-space-xs" id="week-2-body">
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">article</span>
+<span class="font-body-sm text-body-sm text-on-surface">Framework Note: From Coursework to Commercial Competency</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">Completed</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">quiz</span>
+<span class="font-body-sm text-body-sm text-on-surface">Week 2 Knowledge Check: Action Verbs & Metrics</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">Score 100%</span>
+</div>
+</div>
+</article>
+<!-- Week 1: Completed (Collapsible) -->
+<article class="w-full bg-surface-container-lowest shadow-sm rounded-xl overflow-hidden">
+<button class="collapsible-toggle w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container-low/50 transition-colors" data-target="week-1-body" type="button">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-outline">
+<span>01</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface">Week 1: Placement Portal Orientation & Profile Diagnostic</h3>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">4/4 Completed</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Completed Sep 30 · Course policies, syllabus overview, and initial CV audit baseline</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="text-on-surface-variant font-label-sm text-label-sm hidden sm:inline">View Resources</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 chevron-icon">expand_more</span>
+</div>
+</button>
+<div class="hidden p-space-md bg-surface-container-low/30 space-y-space-xs" id="week-1-body">
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">description</span>
+<span class="font-body-sm text-body-sm text-on-surface">PPS4027 Course Charter & Grading Scheme Dossier</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">Completed</span>
+</div>
+</div>
+</article>
+<!-- Week 5: Upcoming Locked Week -->
+<article class="w-full bg-surface-container-lowest/60 shadow-sm rounded-xl overflow-hidden opacity-75">
+<div class="p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-outline">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface">Week 5: Final CA1 Submission & Peer Review Panel</h3>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Unlocks Next Monday</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Covers double-blind peer reviews, final CV locking, and recruiter portal indexation</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline hidden sm:inline">Available Oct 30</span>
+</div>
+</article>
+</main>
+<!-- Right Column: Sidebar / Sub-Panels (4 cols on XL) -->
+<aside class="xl:col-span-4 flex flex-col gap-space-lg">
+<!-- Overall Module 1 Completion Widget with inline SVG donut -->
+<section class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-md">
+<div class="flex items-center justify-between mb-space-sm">
+<h3 class="font-title-sm text-title-sm text-on-surface">Module 1 Milestones</h3>
+<span class="font-label-sm text-label-sm font-semibold text-primary">78% Done</span>
+</div>
+<div class="flex items-center gap-space-md">
+<!-- Inline SVG Ring Progress -->
+<div class="relative w-16 h-16 shrink-0 flex items-center justify-center">
+<svg class="w-16 h-16 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="78, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-label-sm text-label-sm font-bold text-on-surface">18/23</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">18 of 23 resources verified</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Continuous Assessment 1 accounts for 15% of final grade.</span>
+</div>
+</div>
+</section>
+<!-- Recommended External Readings Section -->
+<section class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-md">
+<div class="flex items-center justify-between pb-space-xs mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">auto_stories</span>
+<h3 class="font-title-sm text-title-sm text-on-surface">Recommended External Readings</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Curated</span>
+</div>
+<div class="space-y-space-sm">
+<!-- External Item 1 -->
+<a class="group block p-space-sm rounded bg-surface-container-low hover:bg-surface-container transition-colors" href="https://hwpi.harvard.edu/files/ocs/files/hes-resume-cover-letter-guide.pdf" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Harvard FAS Resource</span>
+<span class="material-symbols-outlined text-[14px] text-outline group-hover:text-primary transition-colors">open_in_new</span>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors">Harvard University Resume & Cover Letter Manual</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">The benchmark guide for action verb taxonomy, bullet condensation, and academic credentials.</p>
+</a>
+<!-- External Item 2 -->
+<a class="group block p-space-sm rounded bg-surface-container-low hover:bg-surface-container transition-colors" href="#">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">ACM Tech Standards</span>
+<span class="material-symbols-outlined text-[14px] text-outline group-hover:text-primary transition-colors">open_in_new</span>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors">ACM Standards for Software Engineering Dossiers</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Categorizing Git commits, open-source pull requests, and technical stack proficiency without vanity metrics.</p>
+</a>
+<!-- External Item 3 -->
+<a class="group block p-space-sm rounded bg-surface-container-low hover:bg-surface-container transition-colors" href="#">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Placement Office Dossier</span>
+<span class="material-symbols-outlined text-[14px] text-outline group-hover:text-primary transition-colors">open_in_new</span>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors">2024 Tier-1 IT & Analytics Recruiter Keyword Index</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Direct extracts from screening taxonomies of top 45 visiting recruiting partners.</p>
+</a>
+</div>
+</section>
+<!-- Mentor Office Hours & Clinic Panel -->
+<section class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-md">
+<div class="flex items-center justify-between pb-space-xs mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">groups</span>
+<h3 class="font-title-sm text-title-sm text-on-surface">Mentor Office Hours</h3>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">Live Support</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+          Book a 15-minute 1:1 resume critique desk with industry mentors before submitting your CA1 final document.
+        </p>
+<!-- Mentor 1 -->
+<div class="p-space-sm rounded bg-surface-container-low mb-space-xs flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shrink-0" data-alt="Warm studio photographic portrait of an experienced South Asian female engineering career mentor with polite academic smile against soft neutral studio backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqXhM1wjfR5L6cLHsQQx0eczPdtleiYbaNWfrHDPa7hzlZlutYl8y9Xj8F1LpMqp9coqHyV3VeEZ1fmnKOsQDOfEDJ-BRMBjv0DstFxnPfmUDiBCU-8XoAvL1LiW7oa-NuOA3bhuBzjr6PHSkavgKmu3Wv8RGvfWlluZzdac8n_GzOygSn9e3gq6S-jl6MtnBFMrT3BaKdm5yZm5tJm_stN2ERV4TDddgPUITBaxe8ePrixiybqY44dQ"/>
+<div>
+<h4 class="font-title-sm text-title-sm text-on-surface">Dr. Nandita Roy</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Today, 3:30 PM – 5:00 PM</span>
+</div>
+</div>
+<button class="px-2.5 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary/90 transition-colors" type="button">
+            Book
+          </button>
+</div>
+<!-- Mentor 2 -->
+<div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shrink-0" data-alt="Portrait of an approachable male senior industry mentor in business-casual navy shirt, warm daylight office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAasI6kORDZSUH-bOJv8kPed8fIzDfTTgQ1WqjpnvAB7_kZDPSv8i3SqHuNkKh8RPKMD-OSP7z0pCeHxDfruT7nzP_BffxIfsUXd-jsE0qkhUOKgX14H2b7pWMoPiCx9ryBgZX6AKcx_VRcyIgvBNjG3zLZaQ60jBcja9xG68Q1x3nWnE12BKYHk7uFibAFaJFXNc0SOm0oPqHhqrXW24_FF9jXdP-eobqgNfUX3F1POx809XkoDqEJcA"/>
+<div>
+<h4 class="font-title-sm text-title-sm text-on-surface">Vikram Mehta (Ex-Amazon)</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Tomorrow, 11:00 AM – 1:00 PM</span>
+</div>
+</div>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+            Waitlist
+          </button>
+</div>
+</section>
+<!-- Placement Cell Announcement Note -->
+<section class="w-full bg-primary/5 rounded-xl p-space-md">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">verified_user</span>
+<div>
+<h4 class="font-title-sm text-title-sm text-primary">Academic Integrity Notice</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-normal">
+              All student CV uploads are processed through internal verification against university registrar records. Fabricated CGPA or phantom internships result in instant debarment from campus placements.
+            </p>
+</div>
+</div>
+</section>
+</aside>
+</div>
+</div>
+<script>
+  // Collapsible Accordion logic for previous completed weeks
+  document.querySelectorAll('.collapsible-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const targetId = button.getAttribute('data-target');
+      const targetBody = document.getElementById(targetId);
+      const chevron = button.querySelector('.chevron-icon');
+      
+      if (targetBody) {
+        const isHidden = targetBody.classList.contains('hidden');
+        if (isHidden) {
+          targetBody.classList.remove('hidden');
+          if (chevron) chevron.style.transform = 'rotate(180deg)';
+        } else {
+          targetBody.classList.add('hidden');
+          if (chevron) chevron.style.transform = 'rotate(0deg)';
+        }
+      }
+    });
+  });
+
+  // Filter functionality by content format
+  const filterButtons = document.querySelectorAll('.format-filter');
+  const contentItems = document.querySelectorAll('.content-item');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary');
+        b.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+      });
+      btn.classList.add('bg-primary', 'text-on-primary');
+      btn.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+
+      const selectedFormat = btn.getAttribute('data-format');
+
+      contentItems.forEach(item => {
+        if (selectedFormat === 'all' || item.getAttribute('data-category') === selectedFormat) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  // Live client-side text filtering
+  const searchInput = document.getElementById('search-input');
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      contentItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        if (text.includes(query)) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    });
+  }
+</script></main></div></body></html>

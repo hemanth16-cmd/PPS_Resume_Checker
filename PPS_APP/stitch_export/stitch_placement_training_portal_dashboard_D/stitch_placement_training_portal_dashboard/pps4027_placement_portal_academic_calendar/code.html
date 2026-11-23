@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Newsreader:wght@100..900&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-bright":"#f8f9fd","surface-dim":"#d8dade","surface":"#f8f9fd","surface-tint":"#416279","on-tertiary-fixed":"#002112","on-secondary-fixed-variant":"#2b4a5f","on-primary-container":"#d0eaff","outline-variant":"#c2c7cd","on-secondary-container":"#47667d","surface-container-highest":"#e1e2e6","error-container":"#ffdad6","tertiary-fixed-dim":"#a0d2b3","inverse-surface":"#2e3134","on-secondary-fixed":"#001e2f","on-primary-fixed-variant":"#284a60","background":"#f8f9fd","surface-container-low":"#f2f3f7","inverse-on-surface":"#eff1f5","on-tertiary-fixed-variant":"#204f38","tertiary-container":"#427158","secondary":"#436278","tertiary-fixed":"#bbeecf","inverse-primary":"#a9cbe5","secondary-fixed-dim":"#abcae4","secondary-fixed":"#c8e6ff","surface-container-lowest":"#ffffff","on-secondary":"#ffffff","on-background":"#191c1f","on-tertiary":"#ffffff","on-error":"#ffffff","primary":"#315369","on-error-container":"#93000a","tertiary":"#2a5841","primary-fixed":"#c8e6ff","primary-fixed-dim":"#a9cbe5","error":"#ba1a1a","on-surface":"#191c1f","on-surface-variant":"#42474c","surface-container":"#eceef2","primary-container":"#4a6b82","on-primary-fixed":"#001e2e","on-primary":"#ffffff","outline":"#72787d","surface-variant":"#e1e2e6","surface-container-high":"#e7e8ec","on-tertiary-container":"#c0f3d3","secondary-container":"#c3e4fe"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin-mobile":"1.25rem","gutter":"1.5rem","margin":"3rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-md":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xl":"2.5rem"},fontFamily:{"body-sm":["Inter"],"label-sm":["Inter"],"metric-display":["Inter"],"headline-lg-mobile":["Newsreader"],"headline-lg":["Newsreader"],"body-md":["Inter"],"headline-sm":["Newsreader"],"display-lg":["Newsreader"],"title-sm":["Inter"],"body-lg":["Newsreader"],"display-lg-mobile":["Newsreader"],"headline-md":["Newsreader"],"label-md":["Inter"],"title-md":["Inter"]},fontSize:{"body-sm":["0.8125rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"label-sm":["0.75rem",{"lineHeight":"1rem","fontWeight":"500"}],"metric-display":["2rem",{"lineHeight":"2.25rem","fontWeight":"600"}],"headline-lg-mobile":["1.625rem",{"lineHeight":"2.125rem","fontWeight":"400"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","fontWeight":"400"}],"body-md":["0.9375rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","fontWeight":"500"}],"display-lg":["3rem",{"lineHeight":"3.5rem","fontWeight":"400"}],"title-sm":["1rem",{"lineHeight":"1.5rem","fontWeight":"600"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"400"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","fontWeight":"400"}],"headline-md":["1.5rem",{"lineHeight":"2rem","fontWeight":"500"}],"label-md":["0.8125rem",{"lineHeight":"1.125rem","fontWeight":"600"}],"title-md":["1.125rem",{"lineHeight":"1.625rem","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low border-r border-outline-variant/30 z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-md border-b border-outline-variant/20 flex items-center gap-space-sm bg-surface-container-lowest"><img alt="PPS4027 Portal Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WqAYLoonOsSzjqBZ6MDAKqtxQaQdYulzo6_FQJcT0l9GahweFqOttsENyytNdlBKzqDolI459ydqm1qRADCWnCChZkwSeh-iu-emqLSgIqeRY63FtIc-ieK9eCDoBOvHVhQZXKZfD5YEMQ3cLYzojr9gbWEOW_Rh-7dIK1CUaQB_-IWAiJJe4lq8MMTg8jx3qOSSx5co2qSS-E-e53D0ubU1sMNXQD59dTby8f-thiUwxtAux_eVceNUn_"/><div class="flex flex-col"><span class="font-title-sm text-title-sm text-primary tracking-tight leading-none">PPS4027</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Placement Training</span></div></div><div class="px-space-md pt-space-md pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Academic Modules</span></div><nav class="flex flex-col gap-1 px-space-sm" data-active-classes="bg-primary text-on-primary font-title-sm rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="learning" href="#"><span class="material-symbols-outlined text-[20px]">local_library</span><span>Learning</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-primary text-on-primary font-title-sm rounded-lg" data-path="calendar" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span>Calendar</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="assignments" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span>Assignments</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="my-progress" href="#"><span class="material-symbols-outlined text-[20px]">trending_up</span><span>My Progress</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="my-results" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span>My Results</span></a></nav><div class="px-space-md pt-space-md pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Account & System</span></div><nav class="flex flex-col gap-1 px-space-sm" data-active-classes="bg-primary text-on-primary font-title-sm rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span>Notifications</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="privacy-data" href="#"><span class="material-symbols-outlined text-[20px]">shield</span><span>Privacy & Data</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="p-space-sm border-t border-outline-variant/30 bg-surface-container-lowest"><div class="flex items-center gap-space-sm p-space-xs rounded-lg border border-outline-variant/30 bg-surface-container-low"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiykzZs64hH-nW8Gb-FdsuvIPQH3c5C0jrYVSuNmPPsYqxqBAoHLBtnzpiXYPo2guX_D4A93NzapXhrrA53tnn1e97QMvSPk9guwtXP-Jgu1iMMExdohqdIYWQKTQmMFf-ldo_WL_RAHMHdDaQdQ7G-wP3X6PpfMlAxpQI64Ch-cfBHUo-37bFn4IewiZGxFGKmxjjaPRyOnx6CQbNUO1TYabc4O4MIscZwptZdVD6EGttATNZTyV27w"/><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface truncate">Aarav Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">PPS-2024-4027</span></div><span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm border border-tertiary/20">Active</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md border-b border-outline-variant/30 z-40 px-gutter flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex items-center gap-space-md"><img alt="PPS4027 Portal Logo" class="h-8 w-auto object-contain md:hidden" src="https://lh3.googleusercontent.com/aida/AEtjO1WqAYLoonOsSzjqBZ6MDAKqtxQaQdYulzo6_FQJcT0l9GahweFqOttsENyytNdlBKzqDolI459ydqm1qRADCWnCChZkwSeh-iu-emqLSgIqeRY63FtIc-ieK9eCDoBOvHVhQZXKZfD5YEMQ3cLYzojr9gbWEOW_Rh-7dIK1CUaQB_-IWAiJJe4lq8MMTg8jx3qOSSx5co2qSS-E-e53D0ubU1sMNXQD59dTby8f-thiUwxtAux_eVceNUn_"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface">Good morning, Aarav</span><span class="px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm border border-secondary/20">Batch of 2025</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Week 4 · Module 1: Resume Building</span></div></div><div class="flex items-center gap-space-md"><div class="relative hidden lg:block w-80"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-space-md py-1.5 bg-surface-container-low border border-outline-variant/40 rounded text-on-surface font-body-sm text-body-sm focus:outline-none focus:border-primary placeholder:text-outline" placeholder="Search modules, resources, deadlines..." type="text"/></div><div class="flex items-center bg-surface-container-low border border-outline-variant/40 rounded p-0.5"><button class="px-2 py-1 rounded bg-surface-container-lowest font-label-sm text-label-sm text-primary shadow-[0_1px_2px_rgba(30,33,36,0.04)] font-semibold" type="button">Student View</button><button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">Trainer View</button><button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">Admin View</button></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-xs pl-space-xs border-l border-outline-variant/30"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiykzZs64hH-nW8Gb-FdsuvIPQH3c5C0jrYVSuNmPPsYqxqBAoHLBtnzpiXYPo2guX_D4A93NzapXhrrA53tnn1e97QMvSPk9guwtXP-Jgu1iMMExdohqdIYWQKTQmMFf-ldo_WL_RAHMHdDaQdQ7G-wP3X6PpfMlAxpQI64Ch-cfBHUo-37bFn4IewiZGxFGKmxjjaPRyOnx6CQbNUO1TYabc4O4MIscZwptZdVD6EGttATNZTyV27w"/><span class="hidden xl:inline font-label-md text-label-md text-on-surface">Aarav</span></div></div></header><main class="relative pt-16 bg-background min-h-screen w-full px-gutter py-space-lg"><div class="flex flex-col w-full">
+<div class="max-w-[1360px] w-full mx-auto pb-space-xl">
+<!-- Top Editorial Header & Utility Bar -->
+<section class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-lg pb-space-md border-b border-outline-variant/30">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm text-outline font-label-sm text-label-sm tracking-wider uppercase">
+<span>PPS4027</span>
+<span>/</span>
+<span>Vocational Placement Registry</span>
+<span>/</span>
+<span class="text-primary font-semibold">Semester V Schedule</span>
+</div>
+<div class="flex items-baseline gap-space-md">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Academic Calendar & Deadlines</h1>
+<span class="hidden sm:inline-block font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">
+            15-Week Placement Track
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Monitored milestones, synchronous mentorship sessions, continuous assessments, and algorithmic ATS verification deliverables.
+        </p>
+</div>
+<!-- Controls & Views Selector -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center bg-surface-container-low p-1 rounded border border-outline-variant/30">
+<button class="px-3 py-1.5 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-sm transition-all" id="view-month">Month</button>
+<button class="px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" id="view-week">Week</button>
+<button class="px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" id="view-agenda">Agenda</button>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest border border-outline-variant/40 rounded px-2 py-1 shadow-sm">
+<button aria-label="Previous Month" class="p-1 text-on-surface-variant hover:text-on-surface rounded hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<div class="flex items-center gap-1.5 px-2">
+<span class="material-symbols-outlined text-[18px] text-primary">calendar_month</span>
+<span class="font-title-sm text-title-sm text-on-surface tracking-tight">October 2024</span>
+</div>
+<button aria-label="Next Month" class="p-1 text-on-surface-variant hover:text-on-surface rounded hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-1.5 bg-primary text-on-primary rounded font-label-sm text-label-sm hover:bg-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Sync Cal (iCal)</span>
+</button>
+</div>
+</section>
+<!-- Legend Ribbon -->
+<div class="flex flex-wrap items-center gap-x-6 gap-y-2 mb-space-lg px-space-md py-2.5 bg-surface-container-low rounded border border-outline-variant/30 font-label-sm text-label-sm">
+<span class="text-outline uppercase tracking-wider font-semibold">Activity Keys:</span>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="text-on-surface-variant">Content Release</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="text-on-surface-variant">Live Q&A (MS Teams)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#A87438]"></span>
+<span class="text-on-surface-variant">Weekly MCQ (MS Forms)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="text-on-surface-variant">Submission Due Date</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="text-error font-medium">Continuous Assessment (CA) Hard Deadline</span>
+</div>
+</div>
+<!-- Main Grid Workspace (12-Column Responsive Layout) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Calendar Body (8 Columns on desktop) -->
+<section class="xl:col-span-8 flex flex-col bg-surface-container-lowest rounded border border-outline-variant/30 shadow-[0_1px_3px_rgba(30,33,36,0.03)] overflow-hidden">
+<!-- Days Header -->
+<div class="grid grid-cols-7 border-b border-outline-variant/30 bg-surface-container-low text-center py-2.5">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Mon</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Tue</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Wed</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Thu</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Fri</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider text-outline">Sat</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider text-outline">Sun</span>
+</div>
+<!-- Month Grid: 5 rows (October 2024 starts on Tue Oct 1) -->
+<div class="grid grid-cols-7 auto-rows-fr bg-outline-variant/20 gap-px">
+<!-- Week 1: Sep 30 (prev) to Oct 6 -->
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col opacity-40">
+<span class="font-label-sm text-label-sm text-outline">30</span>
+</div>
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">1</span>
+<div class="mt-1 p-1 bg-surface-container-high rounded text-[11px] leading-tight text-on-surface truncate">
+              Cohort Induction
+            </div>
+</div>
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">2</span>
+</div>
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">3</span>
+<div class="mt-1 p-1 bg-[#FBF4EA] border border-[#A87438]/20 rounded text-[11px] leading-tight text-[#A87438] truncate">
+              Diagnostic Test
+            </div>
+</div>
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">4</span>
+</div>
+<div class="bg-surface-container-low/40 p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">5</span>
+</div>
+<div class="bg-surface-container-low/40 p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">6</span>
+</div>
+<!-- Week 2: Oct 7 to Oct 13 -->
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">7</span>
+</div>
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">8</span>
+<div class="mt-1 p-1 bg-secondary-fixed/40 border border-secondary/20 rounded text-[11px] leading-tight text-secondary font-medium truncate">
+              Week 2 Lecture Series
+            </div>
+</div>
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">9</span>
+</div>
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">10</span>
+<div class="mt-1 p-1 bg-[#FBF4EA] border border-[#A87438]/20 rounded text-[11px] leading-tight text-[#A87438] truncate">
+              MCQ 2 Assessment
+            </div>
+</div>
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">11</span>
+</div>
+<div class="bg-surface-container-low/40 p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">12</span>
+</div>
+<div class="bg-surface-container-low/40 p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">13</span>
+</div>
+<!-- Week 3: Oct 14 to Oct 20 -->
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">14</span>
+</div>
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">15</span>
+<div class="mt-1 p-1 bg-secondary-fixed/40 border border-secondary/20 rounded text-[11px] leading-tight text-secondary font-medium truncate">
+              Week 3 Grammar & Action Verbs
+            </div>
+</div>
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">16</span>
+</div>
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">17</span>
+<div class="mt-1 p-1 bg-[#FBF4EA] border border-[#A87438]/20 rounded text-[11px] leading-tight text-[#A87438] truncate">
+              MCQ 3 (Syntax & Style)
+            </div>
+</div>
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">18</span>
+</div>
+<div class="bg-surface-container-low/40 p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">19</span>
+</div>
+<div class="bg-surface-container-low/40 p-2 min-h-[110px] flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">20</span>
+</div>
+<!-- Week 4: Oct 21 to Oct 27 (ACTIVE WEEK) -->
+<div class="bg-surface-container-lowest p-2 min-h-[125px] flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">21</span>
+</div>
+<span class="mt-1 text-[11px] text-outline font-label-sm italic">Syllabus Study Day</span>
+</div>
+<!-- Tue Oct 22: Content Release -->
+<div class="bg-surface-container-lowest p-2 min-h-[125px] flex flex-col group hover:bg-surface-container-low/50 transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">22</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="mt-1 p-1.5 rounded bg-surface-container-low border border-secondary/30 flex flex-col gap-1">
+<div class="flex items-center gap-1 text-secondary font-label-sm text-[11px] font-semibold uppercase">
+<span class="material-symbols-outlined text-[14px]">file_open</span>
+<span>Content Release</span>
+</div>
+<span class="text-on-surface font-body-sm text-[12px] leading-tight font-medium">Week 4 ATS Deep-dive</span>
+<span class="text-outline text-[10px]">Portal Upload 09:00 IST</span>
+</div>
+</div>
+<!-- Wed Oct 23: Live Q&A (SELECTED DAY HIGHLIGHT) -->
+<div class="bg-primary/5 p-2 min-h-[125px] flex flex-col border-2 border-primary/40 rounded -m-px z-10 shadow-sm relative">
+<div class="flex items-center justify-between">
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-[11px] font-bold">23</span>
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-primary font-bold">Selected</span>
+</div>
+<div class="mt-1.5 p-2 bg-surface-container-lowest rounded border border-primary/20 flex flex-col gap-1.5 shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
+<div class="flex items-center gap-1 text-primary font-label-sm text-[11px] font-bold uppercase">
+<span class="material-symbols-outlined text-[14px]">videocam</span>
+<span>Live Q&A</span>
+</div>
+<span class="text-on-surface font-body-sm text-[12px] leading-snug font-semibold">Resume Mentorship w/ Rajesh K.</span>
+<a class="mt-1 w-full text-center py-1 px-2 rounded bg-primary hover:bg-primary-container text-on-primary font-label-sm text-[11px] font-medium transition-colors flex items-center justify-center gap-1" href="#join">
+<span>Join Teams (17:00 IST)</span>
+<span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Thu Oct 24: Weekly MCQ 4 -->
+<div class="bg-surface-container-lowest p-2 min-h-[125px] flex flex-col hover:bg-surface-container-low/50 transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">24</span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#A87438]"></span>
+</div>
+<div class="mt-1 p-1.5 rounded bg-[#FBF4EA] border border-[#A87438]/30 flex flex-col gap-1">
+<div class="flex items-center gap-1 text-[#A87438] font-label-sm text-[11px] font-semibold uppercase">
+<span class="material-symbols-outlined text-[14px]">quiz</span>
+<span>Weekly MCQ 4</span>
+</div>
+<span class="text-on-surface font-body-sm text-[12px] leading-tight">Closes 23:59 IST</span>
+<button class="mt-1 text-left text-[#A87438] font-label-sm text-[11px] underline font-medium hover:text-on-surface transition-colors">
+                Open MS Forms
+              </button>
+</div>
+</div>
+<!-- Fri Oct 25 -->
+<div class="bg-surface-container-lowest p-2 min-h-[125px] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">25</span>
+<span class="mt-1 text-[11px] text-outline font-label-sm">Office Hours 14:00-16:00</span>
+</div>
+<!-- Sat Oct 26: CA1 Peer Review -->
+<div class="bg-surface-container-low/40 p-2 min-h-[125px] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">26</span>
+<div class="mt-1 p-1 bg-surface-container-lowest rounded border border-outline-variant/30 text-[11px] text-on-surface-variant leading-tight">
+              Peer Review Clinic (Optional)
+            </div>
+</div>
+<!-- Sun Oct 27 -->
+<div class="bg-surface-container-low/40 p-2 min-h-[125px] flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">27</span>
+</div>
+<!-- Week 5: Oct 28 to Nov 3 -->
+<!-- Mon Oct 28: CA1 Resume Hard Deadline -->
+<div class="bg-error-container/20 p-2 min-h-[135px] flex flex-col border border-error/30 rounded -m-px z-10">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-error font-bold">28</span>
+<span class="px-1.5 py-0.2 rounded bg-error text-on-error font-label-sm text-[9px] uppercase font-bold tracking-wider">Critical</span>
+</div>
+<div class="mt-1.5 p-2 bg-surface-container-lowest rounded border border-error/30 flex flex-col gap-1 shadow-sm">
+<div class="flex items-center gap-1 text-error font-label-sm text-[11px] font-bold uppercase">
+<span class="material-symbols-outlined text-[14px]">alarm</span>
+<span>CA1 Deadline</span>
+</div>
+<span class="text-on-surface font-body-sm text-[12px] font-semibold leading-tight">
+                Resume Submission Hard Deadline
+              </span>
+<div class="flex items-center justify-between mt-1 text-[10px] text-error font-medium">
+<span>Lock: 23:59 IST</span>
+<span class="font-bold">Weighted: 15%</span>
+</div>
+</div>
+</div>
+<!-- Tue Oct 29: Week 5 Polish -->
+<div class="bg-surface-container-lowest p-2 min-h-[135px] flex flex-col hover:bg-surface-container-low/50 transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">29</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="mt-1 p-1.5 rounded bg-surface-container-low border border-outline-variant/30 flex flex-col gap-0.5">
+<span class="text-secondary font-label-sm text-[10px] uppercase font-semibold">Content Release</span>
+<span class="text-on-surface font-body-sm text-[12px] leading-tight">Week 5 Final Polish & Portfolio</span>
+</div>
+</div>
+<!-- Wed Oct 30: Module 1 Evaluation -->
+<div class="bg-surface-container-lowest p-2 min-h-[135px] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">30</span>
+<div class="mt-1 p-1 bg-[#EBF3EE] border border-[#4E7D63]/30 rounded text-[11px] text-[#4E7D63] font-medium leading-tight">
+              Module 1 Feedback Release
+            </div>
+</div>
+<!-- Thu Oct 31 -->
+<div class="bg-surface-container-lowest p-2 min-h-[135px] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">31</span>
+<span class="mt-1 text-[11px] text-outline font-label-sm">Self-Audit Verification</span>
+</div>
+<!-- Nov 1 -->
+<div class="bg-surface-container-lowest p-2 min-h-[135px] flex flex-col opacity-60">
+<span class="font-label-sm text-label-sm text-outline">1 Nov</span>
+</div>
+<!-- Nov 2 -->
+<div class="bg-surface-container-low/40 p-2 min-h-[135px] flex flex-col opacity-60">
+<span class="font-label-sm text-label-sm text-outline">2</span>
+</div>
+<!-- Nov 3 -->
+<div class="bg-surface-container-low/40 p-2 min-h-[135px] flex flex-col opacity-60">
+<span class="font-label-sm text-label-sm text-outline">3</span>
+</div>
+<!-- Nov 4 to Nov 10 preview row snippet for Module 2 -->
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col opacity-60">
+<span class="font-label-sm text-label-sm text-outline">4</span>
+</div>
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col opacity-60">
+<span class="font-label-sm text-label-sm text-outline">5</span>
+</div>
+<div class="bg-secondary-container/20 p-2 min-h-[110px] flex flex-col border border-secondary/30">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold">6 Nov</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="mt-1 p-1 bg-surface-container-lowest rounded border border-secondary/20 text-[11px] leading-tight text-on-surface">
+<span class="font-semibold text-secondary">Module 2:</span> Group Discussion Prep
+            </div>
+</div>
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col opacity-60">
+<span class="font-label-sm text-label-sm text-outline">7</span>
+</div>
+<div class="bg-surface-container-lowest p-2 min-h-[110px] flex flex-col opacity-60">
+<span class="font-label-sm text-label-sm text-outline">8</span>
+</div>
+<div class="bg-surface-container-low/40 p-2 min-h-[110px] flex flex-col opacity-40">
+<span class="font-label-sm text-label-sm text-outline">9</span>
+</div>
+<div class="bg-surface-container-low/40 p-2 min-h-[110px] flex flex-col opacity-40">
+<span class="font-label-sm text-label-sm text-outline">10</span>
+</div>
+</div>
+<!-- Grid Footer Metadata -->
+<div class="px-space-md py-3 bg-surface-container-low border-t border-outline-variant/30 flex flex-wrap items-center justify-between gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">schedule</span>
+<span>All assessment locks are set strictly according to Indian Standard Time (UTC+05:30).</span>
+</div>
+<div class="flex items-center gap-3">
+<span>Attendance benchmark: <strong class="text-on-surface">85% minimum</strong></span>
+<a class="text-primary hover:underline font-medium" href="#rules">Policy Dossier →</a>
+</div>
+</div>
+</section>
+<!-- Side Column: Selected Date Dossier & Upcoming Timeline (4 Columns) -->
+<aside class="xl:col-span-4 flex flex-col gap-space-lg">
+<!-- Selected Date Focus Card -->
+<div class="bg-surface-container-lowest rounded border border-outline-variant/30 shadow-[0_1px_3px_rgba(30,33,36,0.04)] overflow-hidden">
+<div class="p-space-md bg-surface-container-low border-b border-outline-variant/30 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Selected Session Dossier</span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Wednesday, Oct 23, 2024</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-[11px] font-semibold">
+              Live Interactive
+            </span>
+</div>
+<div class="p-space-md flex flex-col gap-space-md">
+<!-- Event Title -->
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">
+                Live Mentor Q&A: Technical & Non-Tech CV Benchmarks
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Direct portfolio reviews and live walkthrough of algorithmic screening systems used by Tier-1 product organizations.
+              </p>
+</div>
+<!-- Mentor Profile Badge -->
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container-low rounded border border-outline-variant/30">
+<img class="w-12 h-12 rounded object-cover border border-outline-variant/40 shrink-0" data-alt="Close-up professional portrait of Rajesh Kumar, senior tech leader wearing charcoal spectacles and dark linen blazer, soft scholarly studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCokyDmlfuTgrIIHSN-QPdxqo3tWyFh4N-1g2iyj3LKFsOEGdv4eVFsrRiShtA2ccWFnp-cIifO-X38jUNHGliqEHpzfdgA_8HTwwbJ66jhc3_IS4St0yJjP3ZbtL7JG_tAtn8jGbY0g3DqcS0md3hZ6lrKP2wWH3pufkis2V_7dh9XNkfTP4Hjybm04pdBKx1ixWECCRJO--XX0S1Dp9A5RqeHKJWBjgR0ugjaT9vDQY2xXu-7KY396g"/>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Rajesh Kumar</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Senior Staff Engineer, ex-Amazon</span>
+<div class="flex items-center gap-1 text-[11px] text-tertiary mt-0.5">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>Lead Industry Fellow</span>
+</div>
+</div>
+</div>
+<!-- Metadata Key-Value List -->
+<div class="flex flex-col divide-y divide-outline-variant/20 font-body-sm text-body-sm">
+<div class="py-2 flex items-center justify-between">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-outline">schedule</span>
+<span>Session Time</span>
+</span>
+<span class="font-medium text-on-surface">17:00 – 18:30 IST</span>
+</div>
+<div class="py-2 flex items-center justify-between">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-outline">desktop_windows</span>
+<span>Platform</span>
+</span>
+<span class="font-medium text-on-surface">MS Teams (SSO Authenticated)</span>
+</div>
+<div class="py-2 flex items-center justify-between">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-outline">group</span>
+<span>Registered Capacity</span>
+</span>
+<span class="font-medium text-on-surface">118 / 140 Enrolled</span>
+</div>
+</div>
+<!-- Required Prerequisite Material -->
+<div class="p-space-sm rounded bg-surface-container border border-outline-variant/40 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">menu_book</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Mandatory Pre-read</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-snug">Review Week 4 Reading PDF (Sections 2.1-2.4) before attending session.</span>
+<a class="inline-flex items-center gap-1 text-primary font-label-sm text-label-sm font-semibold hover:underline mt-1" href="#download-pdf">
+<span>Open Syllabus PDF (3.2 MB)</span>
+<span class="material-symbols-outlined text-[14px]">download</span>
+</a>
+</div>
+</div>
+<!-- Primary CTAs -->
+<div class="flex flex-col gap-2 pt-space-xs">
+<button class="w-full py-2.5 px-space-md bg-primary hover:bg-primary-container text-on-primary rounded font-title-sm text-title-sm flex items-center justify-center gap-2 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[20px]">videocam</span>
+<span>Launch Microsoft Teams Meeting</span>
+</button>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 px-2 bg-surface-container-lowest border border-outline-variant/40 hover:bg-surface-container-high rounded text-on-surface font-label-sm text-label-sm flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-outline">event</span>
+<span>Add Google Cal</span>
+</button>
+<button class="py-2 px-2 bg-surface-container-lowest border border-outline-variant/40 hover:bg-surface-container-high rounded text-on-surface font-label-sm text-label-sm flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-outline">mail</span>
+<span>Add Outlook</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Upcoming 7-Day Agenda Section -->
+<div class="bg-surface-container-lowest rounded border border-outline-variant/30 shadow-[0_1px_3px_rgba(30,33,36,0.04)] p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">event_upcoming</span>
+<h4 class="font-title-sm text-title-sm text-on-surface font-semibold">Upcoming 7-Day Agenda</h4>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Oct 24 – Oct 31</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Item 1 -->
+<div class="p-2.5 rounded bg-surface-container-low border-l-4 border-l-[#A87438] border border-outline-variant/30 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-[11px] font-bold text-[#A87438] uppercase tracking-wider">Tomorrow · Oct 24</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">23:59 IST</span>
+</div>
+<div class="font-title-sm text-title-sm text-on-surface font-semibold">Weekly MCQ 4 (MS Forms)</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">15 algorithmic questions covering ATS semantic match filters.</p>
+<div class="flex items-center justify-between mt-1">
+<span class="font-label-sm text-[11px] text-outline">Graded · 5% Final Weight</span>
+<a class="font-label-sm text-label-sm text-primary hover:underline font-semibold flex items-center gap-0.5" href="#forms">
+<span>Start Test</span>
+<span class="material-symbols-outlined text-[14px]">launch</span>
+</a>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-2.5 rounded bg-surface-container-low border-l-4 border-l-secondary border border-outline-variant/30 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-[11px] font-bold text-secondary uppercase tracking-wider">Saturday · Oct 26</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">11:00 - 13:00 IST</span>
+</div>
+<div class="font-title-sm text-title-sm text-on-surface font-semibold">CA1 Peer Review Clinic</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Optional breakout rooms to benchmark resumes against standardized rubric.</p>
+<div class="flex items-center justify-between mt-1">
+<span class="font-label-sm text-[11px] text-tertiary">Optional Attendance</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Breakout Pods 1-8</span>
+</div>
+</div>
+<!-- Item 3: Hard Deadline -->
+<div class="p-2.5 rounded bg-[#FDF2F2] border-l-4 border-l-error border border-error/20 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-[11px] font-bold text-error uppercase tracking-wider">Monday · Oct 28</span>
+<span class="font-label-sm text-label-sm text-error font-bold font-mono">23:59 IST LOCK</span>
+</div>
+<div class="font-title-sm text-title-sm text-error font-semibold">CA1 Continuous Assessment Submission</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Final upload of tailored PDF & ATS parse score card. Zero late tolerance.</p>
+<div class="flex items-center justify-between mt-1">
+<span class="font-label-sm text-[11px] text-error font-semibold">Mandatory Barrier Deliverable</span>
+<a class="px-2 py-0.5 bg-error text-on-error rounded font-label-sm text-label-sm font-semibold hover:opacity-90 transition-opacity" href="#submit">Submit PDF</a>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="p-2.5 rounded bg-surface-container-low border-l-4 border-l-tertiary border border-outline-variant/30 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-[11px] font-bold text-tertiary uppercase tracking-wider">Wednesday · Oct 30</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">18:00 IST</span>
+</div>
+<div class="font-title-sm text-title-sm text-on-surface font-semibold">Module 1 Feedback & Mentor Evaluations</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Individualized rubric breakdown and readiness classification released.</p>
+</div>
+</div>
+</div>
+<!-- Instructor Support Contact Note -->
+<div class="p-space-md bg-surface-container rounded border border-outline-variant/30 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover border border-outline-variant/40" data-alt="Small academic advisor headshot in a circular badge, smiling female professor with professional attire." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP5HuWdD7vfCSw32cWhum93vCRF9H1fONukV_a_dbVftAd_DKeD4915iqeR9GHDSA51EpG_RcIwwC6wkvaY55i8odAJq17Aqh3otMzKvRGzv3bi5LHbI8XWR62WdIJDCoYL_rFdYRGiuCMFA2gpHX8j7FZtJCamMmcgoVHvwIYJpytuEtfNcwd2CBssrMjdl1i_LkLCFWc7CQBrarQPGKdGBGEet3YVOuQNy2qxJFRGseUgFiz4qR-YA"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Course Coordinator Desk</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">placement-office@university.edu</span>
+</div>
+</div>
+<a class="p-1.5 rounded hover:bg-surface-container-high text-on-surface-variant transition-colors" href="#help" title="Message Helpdesk">
+<span class="material-symbols-outlined text-[20px]">outgoing_mail</span>
+</a>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<script>
+  // Simple view switcher toggles active classes
+  const monthBtn = document.getElementById('view-month');
+  const weekBtn = document.getElementById('view-week');
+  const agendaBtn = document.getElementById('view-agenda');
+
+  function setActiveView(active, inactives) {
+    active.className = 'px-3 py-1.5 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-sm transition-all';
+    inactives.forEach(btn => {
+      btn.className = 'px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all';
+    });
+  }
+
+  if (monthBtn && weekBtn && agendaBtn) {
+    monthBtn.addEventListener('click', () => setActiveView(monthBtn, [weekBtn, agendaBtn]));
+    weekBtn.addEventListener('click', () => setActiveView(weekBtn, [monthBtn, agendaBtn]));
+    agendaBtn.addEventListener('click', () => setActiveView(agendaBtn, [monthBtn, weekBtn]));
+  }
+</script></main></div></body></html>

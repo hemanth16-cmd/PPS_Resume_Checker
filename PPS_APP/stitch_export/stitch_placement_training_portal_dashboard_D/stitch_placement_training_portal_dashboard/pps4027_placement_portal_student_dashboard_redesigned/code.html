@@ -1,0 +1,438 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'inverse-primary': '#a9cbe5', 'inverse-on-surface': '#eff1f5', 'tertiary-fixed-dim': '#a0d2b3', 'on-primary-fixed-variant': '#284a60', 'on-secondary-fixed': '#001e2f', 'on-tertiary-fixed-variant': '#204f38', 'on-error-container': '#93000a', 'surface-container-lowest': '#ffffff', 'error-container': '#ffdad6', 'secondary-fixed-dim': '#abcae4', 'secondary-fixed': '#c8e6ff', 'surface-container-low': '#f2f3f7', 'on-secondary-container': '#47667d', 'on-secondary-fixed-variant': '#2b4a5f', 'on-tertiary': '#ffffff', 'on-secondary': '#ffffff', 'surface-container-high': '#e7e8ec', 'on-surface-variant': '#42474c', 'secondary': '#436278', 'tertiary': '#2a5841', 'on-primary-container': '#d0eaff', 'on-error': '#ffffff', 'tertiary-container': '#427158', 'background': '#f8f9fd', 'inverse-surface': '#2e3134', 'outline': '#72787d', 'primary': '#315369', 'surface-dim': '#d8dade', 'surface-container-highest': '#e1e2e6', 'on-tertiary-fixed': '#002112', 'tertiary-fixed': '#bbeecf', 'surface-tint': '#416279', 'on-tertiary-container': '#c0f3d3', 'on-surface': '#191c1f', 'on-primary': '#ffffff', 'surface-container': '#eceef2', 'primary-container': '#4a6b82', 'primary-fixed': '#c8e6ff', 'surface-bright': '#f8f9fd', 'error': '#ba1a1a', 'surface-variant': '#e1e2e6', 'on-background': '#191c1f', 'primary-fixed-dim': '#a9cbe5', 'secondary-container': '#c3e4fe', 'surface': '#f8f9fd', 'outline-variant': '#c2c7cd', 'on-primary-fixed': '#001e2e' }, 'borderRadius': { 'DEFAULT': '0.125rem', 'lg': '0.25rem', 'xl': '0.5rem', 'full': '0.75rem' }, 'spacing': { 'space-md': '1rem', 'space-lg': '1.5rem', 'space-sm': '0.5rem', 'margin': '3rem', 'gutter': '1.5rem', 'space-xl': '2.5rem', 'gutter-mobile': '1rem', 'margin-mobile': '1.25rem', 'space-xs': '0.25rem' }, 'fontFamily': { 'headline-sm': ['Newsreader'], 'title-sm': ['Inter'], 'label-sm': ['Inter'], 'headline-md': ['Newsreader'], 'display-lg': ['Newsreader'], 'metric-display': ['Inter'], 'headline-lg': ['Newsreader'], 'body-md': ['Inter'], 'headline-lg-mobile': ['Newsreader'], 'title-md': ['Inter'], 'body-lg': ['Newsreader'], 'body-sm': ['Inter'], 'display-lg-mobile': ['Newsreader'], 'label-md': ['Inter'] }, 'fontSize': { 'headline-sm': ['1.25rem', { 'lineHeight': '1.75rem', 'fontWeight': '500' }], 'title-sm': ['1rem', { 'lineHeight': '1.5rem', 'fontWeight': '600' }], 'label-sm': ['0.75rem', { 'lineHeight': '1rem', 'fontWeight': '500' }], 'headline-md': ['1.5rem', { 'lineHeight': '2rem', 'fontWeight': '500' }], 'display-lg': ['3rem', { 'lineHeight': '3.5rem', 'fontWeight': '400' }], 'metric-display': ['2rem', { 'lineHeight': '2.25rem', 'fontWeight': '600' }], 'headline-lg': ['2rem', { 'lineHeight': '2.5rem', 'fontWeight': '400' }], 'body-md': ['0.9375rem', { 'lineHeight': '1.5rem', 'fontWeight': '400' }], 'headline-lg-mobile': ['1.625rem', { 'lineHeight': '2.125rem', 'fontWeight': '400' }], 'title-md': ['1.125rem', { 'lineHeight': '1.625rem', 'fontWeight': '600' }], 'body-lg': ['1.125rem', { 'lineHeight': '1.75rem', 'fontWeight': '400' }], 'body-sm': ['0.8125rem', { 'lineHeight': '1.25rem', 'fontWeight': '400' }], 'display-lg-mobile': ['2.25rem', { 'lineHeight': '2.75rem', 'fontWeight': '400' }], 'label-md': ['0.8125rem', { 'lineHeight': '1.125rem', 'fontWeight': '600' }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 overflow-y-auto px-space-md pt-space-lg"><div class="flex items-center gap-space-sm px-space-xs pb-space-lg mb-space-sm"><img alt="Brand logo. - Primary color: #4a6b82
+- Font: newsreader
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WqAYLoonOsSzjqBZ6MDAKqtxQaQdYulzo6_FQJcT0l9GahweFqOttsENyytNdlBKzqDolI459ydqm1qRADCWnCChZkwSeh-iu-emqLSgIqeRY63FtIc-ieK9eCDoBOvHVhQZXKZfD5YEMQ3cLYzojr9gbWEOW_Rh-7dIK1CUaQB_-IWAiJJe4lq8MMTg8jx3qOSSx5co2qSS-E-e53D0ubU1sMNXQD59dTby8f-thiUwxtAux_eVceNUn_"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">PPS4027</span><span class="font-label-sm text-label-sm text-outline tracking-normal">Placement Portal</span></div></div><div class="mb-space-sm"><p class="px-space-sm mb-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Curriculum</p><nav class="flex flex-col gap-space-xs" data-active-classes="bg-secondary-container text-on-secondary-container font-label-md"><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg transition-colors bg-secondary-container text-on-secondary-container font-label-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[1.25rem]">grid_view</span><span class="">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="learning" href="#"><span class="material-symbols-outlined text-[1.25rem]">menu_book</span><span class="">Learning</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="calendar" href="#"><span class="material-symbols-outlined text-[1.25rem]">calendar_today</span><span class="">Calendar</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="assignments" href="#"><span class="material-symbols-outlined text-[1.25rem]">assignment</span><span class="">Assignments</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="resume-review" href="#"><span class="material-symbols-outlined text-[1.25rem]">find_in_page</span><span class="">Resume Review</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="my-progress" href="#"><span class="material-symbols-outlined text-[1.25rem]">trending_up</span><span class="">My Progress</span></a></nav></div><div class="mt-space-md mb-space-sm"><p class="px-space-sm mb-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Account &amp; System</p><nav class="flex flex-col gap-space-xs" data-active-classes="bg-secondary-container text-on-secondary-container font-label-md"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[1.25rem]">notifications</span><span class="">Notifications</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="privacy-data" href="#"><span class="material-symbols-outlined text-[1.25rem]">verified_user</span><span class="">Privacy &amp; Data</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[1.25rem]">settings</span><span class="">Settings</span></a></nav></div></div><div class="p-space-md m-space-sm rounded-lg bg-surface-container-low"><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VCeRE63oVixtIq0Sy8gyLrmYfrtj8YceXQu5875f-sRKPimUtlaDgtKEk_0eWeE5KYOa_BRRzEq8XM9ACUsI95-0yUIMiNkOBMiIE05ejB-hnDqFv4rjS6BY3Z7uhKMoQZZfASYHNFKzoxH2F8aEdJoGwMzudXzNmU-nGOFVSyOxK0ax9GjaYvQ2Y7mfgYYueHfAw91D9nHJFR4NBxxRMG9eiezfmN3adhlgxx6pAI3SBYuWuEOLG98rE"><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface truncate">Aarav Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Roll: PPS-2024-4027</span><span class="font-label-sm text-label-sm text-primary truncate">Placement 2025</span></div></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter"><div class="flex items-center gap-space-md"><div class="flex items-baseline gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface font-bold">Good morning, Aarav</span></div><span class="inline-flex items-center px-space-xs py-0.5 rounded-lg bg-surface-container font-label-sm text-label-sm text-secondary">Cohort AY 2024–25 · Week 4</span></div><div class="flex items-center gap-space-lg"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-[1.125rem] text-outline pointer-events-none">search</span><input class="w-72 pl-9 pr-space-sm py-1.5 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:bg-surface-container-lowest focus:outline-none transition-all" placeholder="Search modules, readings, deadlines..." type="text"></div><div class="flex items-center rounded-lg bg-surface-container-low p-1 gap-1"><button class="px-space-xs py-0.5 rounded-DEFAULT bg-surface-container-lowest shadow-[0_1px_2px_rgba(30,33,36,0.04)] font-label-sm text-label-sm text-on-surface" type="button">Student View</button><button class="px-space-xs py-0.5 rounded-DEFAULT font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">Trainer View</button><button class="px-space-xs py-0.5 rounded-DEFAULT font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">Admin View</button></div><button class="relative p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[1.25rem]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VCeRE63oVixtIq0Sy8gyLrmYfrtj8YceXQu5875f-sRKPimUtlaDgtKEk_0eWeE5KYOa_BRRzEq8XM9ACUsI95-0yUIMiNkOBMiIE05ejB-hnDqFv4rjS6BY3Z7uhKMoQZZfASYHNFKzoxH2F8aEdJoGwMzudXzNmU-nGOFVSyOxK0ax9GjaYvQ2Y7mfgYYueHfAw91D9nHJFR4NBxxRMG9eiezfmN3adhlgxx6pAI3SBYuWuEOLG98rE"><span class="font-label-md text-label-md text-on-surface hidden lg:inline-block">Aarav Sharma</span></div></div></header><main class="relative pt-16 flex-1 w-full px-gutter"><div class="flex flex-col w-full pb-margin">
+<!-- Top Academic Context Header Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-1">
+<span class="">PPS4027</span>
+<span class="text-outline">/</span>
+<span class="">Vocational Guidance</span>
+<span class="text-outline">/</span>
+<span class="text-primary font-semibold">Student Portfolio</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight font-bold">Placement Preparation Workspace</h1>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-high px-2 py-0.5 rounded-DEFAULT">Drafting Phase</span>
+</div>
+</div>
+<!-- Quick Cohort Snapshot Tag -->
+<div class="flex items-center gap-space-md self-start md:self-auto bg-surface-container-lowest p-space-xs px-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">CA1 Window Open</span>
+</div>
+<span class="text-outline-variant font-light">|</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Days Remaining</span>
+</div>
+</div>
+<!-- 1. Hero Next-Step Card -->
+<section class="relative overflow-hidden bg-surface-container-lowest rounded-xl shadow-sm mb-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 items-center p-space-lg md:p-space-xl gap-space-lg relative z-10">
+<div class="lg:col-span-8 flex flex-col items-start">
+<div class="inline-flex items-center gap-2 px-space-sm py-1 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-label-sm text-label-sm mb-space-sm">
+<span class="material-symbols-outlined text-[1rem]">auto_stories</span>
+<span class="">Week 4 · Module 1: Resume Building</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mb-space-xs max-w-2xl font-bold">
+          Build a resume that gets noticed.
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-space-lg leading-relaxed">
+          Benchmark your draft against industry role requirements with clear, explainable feedback before CA1 locking.
+        </p>
+<div class="flex flex-wrap items-center gap-space-md">
+<a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-container text-on-primary px-space-lg py-2.5 rounded-DEFAULT font-label-md text-label-md shadow-sm transition-colors" href="#">
+<span class="">Start Resume Review</span>
+<span class="material-symbols-outlined text-[1rem]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-2 text-primary hover:text-on-surface font-label-md text-label-md px-space-md py-2.5 rounded-DEFAULT hover:bg-surface-container-low transition-colors" href="#">
+<span class="material-symbols-outlined text-[1.125rem] text-secondary">description</span>
+<span class="">Download CA1 Guide (PDF)</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-4 flex justify-center lg:justify-end">
+<div class="relative w-full max-w-xs aspect-square flex items-center justify-center p-space-md bg-surface-container-low rounded-xl">
+<img alt="Minimal editorial document validation illustration" class="w-full h-full object-contain mix-blend-multiply opacity-95 hover:scale-[1.02] transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1W77F5ito7ggLWPFqRU0MWVri08m8j2MKHCVZR-d0jiRN786cSTjRUOvaq1hkNd-9n7s55mUHkpQFW8KRh8d-JPhSrz-bn_KkZzL0kXxFZ3AChlfyRT9zt58GlKSxJDBynz4jpNzYQgVxWHk5Ha9YYQY2k46RIDT5X4R1JFRtVfktnUCmgdl_dhS3fFSXMCaV9fTkR-XQyW6E5eFTOiPAC0xnf0FvTtBolQi76bSs7oFVJC0lhSZrJkcK6D">
+</div>
+</div>
+</div>
+</section>
+<!-- 2. At-A-Glance Priority Cards (3 Columns) -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md mb-space-lg">
+<!-- Card 1: Next Best Action -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Priority Action</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Due Oct 28</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-space-xs">Upload Single-Column CV Draft</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Mandatory compliance for CA1 grading. Upload the updated ATS-parseable format before review locks.
+        </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between mt-auto">
+<a class="inline-flex items-center gap-1.5 bg-primary text-on-primary px-space-md py-2 rounded-DEFAULT font-label-md text-label-md hover:bg-primary-container transition-colors w-full justify-center" href="#">
+<span class="">Go to CA1 Submission</span>
+<span class="material-symbols-outlined text-[1rem]">arrow_right_alt</span>
+</a>
+</div>
+</div>
+<!-- Card 2: This Week's Learning -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Module Checklist</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold bg-tertiary-fixed/30 px-2 py-0.5 rounded-DEFAULT">2 of 3 Done</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-space-sm">This Week's Learning</h3>
+<div class="flex flex-col gap-2.5 mb-space-md">
+<div class="flex items-center justify-between text-body-sm">
+<span class="inline-flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[1.125rem] text-tertiary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="line-through text-on-surface-variant">Tuesday Content Lecture</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline">Done</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="inline-flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[1.125rem] text-tertiary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="line-through text-on-surface-variant">Wed Live Q&amp;A w/ Mentors</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline">Done</span>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded-DEFAULT bg-surface-container-low">
+<span class="inline-flex items-center gap-2 text-on-surface font-body-sm text-body-sm font-medium">
+<span class="material-symbols-outlined text-[1.125rem] text-primary">radio_button_unchecked</span>
+<span class="">Thursday MCQ 4</span>
+</span>
+<span class="font-label-sm text-label-sm text-error font-medium">Due Tonight</span>
+</div>
+</div>
+</div>
+<div class="pt-space-xs">
+<a class="inline-flex items-center justify-between w-full font-label-md text-label-md text-primary hover:text-on-surface transition-colors py-1" href="#">
+<span class="">Open Week 4 Quiz</span>
+<span class="material-symbols-outlined text-[1.125rem]">launch</span>
+</a>
+</div>
+</div>
+<!-- Card 3: Continuous Assessment Progress -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Continuous Assessment</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Semester Track</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Curriculum Momentum</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Week 4 of 15 completed across placement tracks.</p>
+<!-- Academic Bar Representation -->
+<div class="space-y-1.5 mb-space-md">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">Overall Course Progress</span>
+<span class="text-primary font-bold">42%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 42%;"></div>
+</div>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-DEFAULT flex items-center justify-between">
+<div>
+<p class="font-label-sm text-label-sm text-outline">Upcoming Evaluation</p>
+<p class="font-label-md text-label-md text-on-surface font-medium">CA1: Draft in Progress</p>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-DEFAULT bg-surface-container-highest text-secondary">30% Weight</span>
+</div>
+</div>
+</section>
+<!-- 3. Latest Resume Health & Diagnostics -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg md:p-space-xl mb-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-lg pb-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Latest Resume Diagnostics · v2.4</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Evaluated today for <span class="text-on-surface font-medium">Thoughtworks Data Analyst</span> role benchmark.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<span class="font-label-sm text-label-sm text-outline">Engine: Semantic ATS 4.2</span>
+<button class="px-space-md py-1.5 rounded-DEFAULT bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors inline-flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[1rem]">refresh</span>
+<span class="">Re-scan File</span>
+</button>
+</div>
+</div>
+<!-- 4 Segmented Score Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-xl">
+<!-- ATS Compatibility -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex justify-between items-start mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ATS Compatibility</span>
+<span class="material-symbols-outlined text-tertiary text-[1.25rem]">verified</span>
+</div>
+<div class="flex items-baseline gap-1 mb-2">
+<span class="font-metric-display text-metric-display text-on-surface">84</span>
+<span class="font-label-sm text-label-sm text-outline">/100</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mb-2">
+<div class="bg-tertiary h-full rounded-full" style="width: 84%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">Pass · Clean UTF-8 text</span>
+</div>
+<!-- Parseability -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex justify-between items-start mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Parseability</span>
+<span class="material-symbols-outlined text-tertiary text-[1.25rem]">fact_check</span>
+</div>
+<div class="flex items-baseline gap-1 mb-2">
+<span class="font-metric-display text-metric-display text-on-surface">91</span>
+<span class="font-label-sm text-label-sm text-outline">/100</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mb-2">
+<div class="bg-tertiary h-full rounded-full" style="width: 91%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">Excellent · Standard sections</span>
+</div>
+<!-- Role Alignment -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex justify-between items-start mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Target Alignment</span>
+<span class="material-symbols-outlined text-secondary text-[1.25rem]">sync</span>
+</div>
+<div class="flex items-baseline gap-1 mb-2">
+<span class="font-metric-display text-metric-display text-on-surface">68</span>
+<span class="font-label-sm text-label-sm text-outline">/100</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mb-2">
+<div class="bg-secondary h-full rounded-full" style="width: 68%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Good · 5 gaps to address</span>
+</div>
+<!-- Structural Integrity -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex justify-between items-start mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Structural Integrity</span>
+<span class="material-symbols-outlined text-tertiary text-[1.25rem]">view_column</span>
+</div>
+<div class="flex items-baseline gap-1 mb-2">
+<span class="font-metric-display text-metric-display text-on-surface">88</span>
+<span class="font-label-sm text-label-sm text-outline">/100</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mb-2">
+<div class="bg-tertiary h-full rounded-full" style="width: 88%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">Pass · Single-column format</span>
+</div>
+</div>
+<!-- Editorial Diagnostic Insights -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md pt-space-xs">
+<!-- High-Fidelity Callouts -->
+<div class="lg:col-span-2 flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm p-space-md bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-tertiary mt-0.5 text-[1.25rem]">check_circle</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Semantic Foundation Passed</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Header, phone format (+91), email, and education records cleanly extract into standard recruiter profiles.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-md bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary mt-0.5 text-[1.25rem]">lightbulb</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Project Bullet Guidance</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Expand quantitative outcomes in your Capstone entry. Use the STAR rubric: Action + Metric + Impact (e.g., "Reduced processing latency by 32%").
+            </p>
+</div>
+</div>
+</div>
+<!-- Skills to Enhance Pill Panel -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold mb-space-xs block">Key Target Keywords</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Suggested additions for Data Analyst profiles:</p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 bg-surface-container-lowest text-on-surface rounded-full font-label-sm text-label-sm">Data Modelling</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest text-on-surface rounded-full font-label-sm text-label-sm">SQL Window Functions</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest text-on-surface rounded-full font-label-sm text-label-sm">ETL Pipelines</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest text-on-surface rounded-full font-label-sm text-label-sm">Power BI</span>
+</div>
+</div>
+<div class="pt-space-md">
+<a class="font-label-sm text-label-sm text-primary hover:text-on-surface inline-flex items-center gap-1 font-semibold" href="#">
+<span class="">Review Full Parser Output</span>
+<span class="material-symbols-outlined text-[1rem]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Upcoming Deadlines & Recent Submissions -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Upcoming Deadlines Card -->
+<div class="bg-surface-container-lowest p-space-lg md:p-space-xl rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[1.25rem]">event</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Upcoming Placement Milestones</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline">AY 2024–25</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Deadline item 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 rounded-DEFAULT bg-surface-container-highest text-secondary mt-0.5">
+<span class="material-symbols-outlined text-[1.125rem]">assignment_late</span>
+</div>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface block">CA1 Final Submission</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Single-column validated CV · Placement Cell Portal</span>
+<p class="font-label-sm text-label-sm text-outline mt-1">Monday, Oct 28 at 23:59 IST</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold shrink-0">
+              4 days left
+            </span>
+</div>
+<!-- Deadline item 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 rounded-DEFAULT bg-surface-container-highest text-secondary mt-0.5">
+<span class="material-symbols-outlined text-[1.125rem]">video_camera_front</span>
+</div>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface block">Live Masterclass with Rajesh Kumar</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ex-Deloitte Director · Demystifying Case Interviews</span>
+<p class="font-label-sm text-label-sm text-outline mt-1">Wednesday, Oct 30 at 17:00 IST</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container text-on-surface-variant font-label-sm text-label-sm shrink-0">
+              Mandatory
+            </span>
+</div>
+<!-- Deadline item 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 rounded-DEFAULT bg-surface-container-highest text-secondary mt-0.5">
+<span class="material-symbols-outlined text-[1.125rem]">quiz</span>
+</div>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface block">Formative Quiz 5: Aptitude &amp; Logic</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">30 Questions · Numerical reasoning baseline</span>
+<p class="font-label-sm text-label-sm text-outline mt-1">Thursday, Nov 7 at 20:00 IST</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container text-on-surface-variant font-label-sm text-label-sm shrink-0">
+              Scheduled
+            </span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm">
+<a class="font-label-md text-label-md text-primary hover:text-on-surface inline-flex items-center gap-1" href="#">
+<span class="">View Placement Calendar</span>
+<span class="material-symbols-outlined text-[1rem]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Recent Resume Audits Card -->
+<div class="bg-surface-container-lowest p-space-lg md:p-space-xl rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[1.25rem]">history_edu</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Recent Resume Audits</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline">3 Drafts Saved</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Audit File 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-DEFAULT bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[1.25rem]">picture_as_pdf</span>
+</div>
+<div class="min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface block truncate">Aarav_Sharma_CV_v2.4.pdf</span>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="truncate">Thoughtworks Data Analyst</span>
+<span class="text-outline">·</span>
+<span class="text-tertiary font-medium">84% Match</span>
+<span class="text-outline">·</span>
+<span class="">Today</span>
+</div>
+</div>
+</div>
+<a class="font-label-md text-label-md text-primary hover:text-on-surface ml-space-sm shrink-0 whitespace-nowrap" href="#">
+              View Feedback
+            </a>
+</div>
+<!-- Audit File 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-DEFAULT bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[1.25rem]">picture_as_pdf</span>
+</div>
+<div class="min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface block truncate">Aarav_Sharma_CV_v2.1.pdf</span>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="truncate">Deloitte Risk Advisory</span>
+<span class="text-outline">·</span>
+<span class="text-secondary font-medium">76% Match</span>
+<span class="text-outline">·</span>
+<span class="">Oct 20</span>
+</div>
+</div>
+</div>
+<a class="font-label-md text-label-md text-primary hover:text-on-surface ml-space-sm shrink-0 whitespace-nowrap" href="#">
+              View Feedback
+            </a>
+</div>
+<!-- Audit File 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-DEFAULT bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[1.25rem]">article</span>
+</div>
+<div class="min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface block truncate">Aarav_CV_Draft1.docx</span>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="truncate">General Profile</span>
+<span class="text-outline">·</span>
+<span class="text-secondary font-medium">64% Match</span>
+<span class="text-outline">·</span>
+<span class="">Oct 15</span>
+</div>
+</div>
+</div>
+<a class="font-label-md text-label-md text-primary hover:text-on-surface ml-space-sm shrink-0 whitespace-nowrap" href="#">
+              View Feedback
+            </a>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between">
+<a class="font-label-md text-label-md text-primary hover:text-on-surface inline-flex items-center gap-1" href="#">
+<span class="">Compare Versions</span>
+<span class="material-symbols-outlined text-[1rem]">tune</span>
+</a>
+<span class="font-label-sm text-label-sm text-outline">Max storage 10 versions</span>
+</div>
+</div>
+</section>
+</div></main></div>
+
+</body></html>

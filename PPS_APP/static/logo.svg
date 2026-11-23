@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="168" height="40" viewBox="0 0 168 40" role="img" aria-label="PPS">
+  <rect x="2" y="4" width="32" height="32" rx="9" fill="#315369"/>
+  <path d="M12 12h7.5a5.5 5.5 0 0 1 0 11H15v5h-3z" fill="#fff"/>
+  <path d="M15 15v5h4.3a2.5 2.5 0 0 0 0-5z" fill="#315369"/>
+  <circle cx="27" cy="27" r="3.2" fill="#7FC39C"/>
+  <text x="44" y="22" font-family="Manrope, Inter, Segoe UI, sans-serif" font-size="17" font-weight="800" fill="#5E7F96">PPS</text>
+  <text x="44" y="34" font-family="Inter, Segoe UI, sans-serif" font-size="9" font-weight="500" fill="#7D8A96" letter-spacing=".6">PLACEMENT PREP</text>
+</svg>

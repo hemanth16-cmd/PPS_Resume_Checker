@@ -1,0 +1,185 @@
+@import "tailwindcss";
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/geist-mono";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ------------------------------------------------------------------
+   PPS design tokens
+   Light: warm paper. Dark: midnight ink. One indigo→violet accent.
+   ------------------------------------------------------------------ */
+:root {
+  --bg: #f7f6f2;
+  --bg-subtle: #efede7;
+  --surface: #ffffff;
+  --surface-2: #fbfaf7;
+  --elevated: #ffffff;
+  --border: #e6e3dc;
+  --border-strong: #d6d2c8;
+  --fg: #17171c;
+  --fg-muted: #5d5d68;
+  --fg-subtle: #8b8a93;
+
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --primary-fg: #ffffff;
+  --primary-soft: #eef0ff;
+  --primary-soft-fg: #3730a3;
+  --accent: #7c3aed;
+
+  --success: #237a4f;
+  --success-soft: #e6f4ec;
+  --warning: #a8620d;
+  --warning-soft: #fcf1e1;
+  --danger: #c0352b;
+  --danger-soft: #fbe9e7;
+  --info: #2f6fb3;
+  --info-soft: #e7f0fa;
+
+  --ring: #6366f1;
+  --shadow-color: 30 25% 20%;
+  --grid-line: rgba(23, 23, 28, 0.045);
+}
+
+.dark {
+  --bg: #090b11;
+  --bg-subtle: #0e1119;
+  --surface: #10131b;
+  --surface-2: #141823;
+  --elevated: #181c28;
+  --border: #222736;
+  --border-strong: #2e3446;
+  --fg: #ececf1;
+  --fg-muted: #9a9cab;
+  --fg-subtle: #6b6e7f;
+
+  --primary: #7c7cf8;
+  --primary-hover: #9696fa;
+  --primary-fg: #0b0c14;
+  --primary-soft: #1c1d3d;
+  --primary-soft-fg: #b9b9fd;
+  --accent: #a78bfa;
+
+  --success: #4fc489;
+  --success-soft: #11261c;
+  --warning: #f0b25a;
+  --warning-soft: #2a1f0f;
+  --danger: #f2766b;
+  --danger-soft: #2c1414;
+  --info: #6aa8e8;
+  --info-soft: #112032;
+
+  --ring: #8b8bfa;
+  --shadow-color: 230 40% 2%;
+  --grid-line: rgba(255, 255, 255, 0.035);
+}
+
+@theme inline {
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, monospace;
+
+  --color-bg: var(--bg);
+  --color-bg-subtle: var(--bg-subtle);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-elevated: var(--elevated);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-subtle: var(--fg-subtle);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-fg: var(--primary-fg);
+  --color-primary-soft: var(--primary-soft);
+  --color-primary-soft-fg: var(--primary-soft-fg);
+  --color-accent: var(--accent);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --color-ring: var(--ring);
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+
+  --shadow-xs: 0 1px 2px hsl(var(--shadow-color) / 0.06);
+  --shadow-sm: 0 1px 2px hsl(var(--shadow-color) / 0.06), 0 2px 6px -2px hsl(var(--shadow-color) / 0.08);
+  --shadow-md: 0 2px 4px -1px hsl(var(--shadow-color) / 0.06), 0 8px 24px -6px hsl(var(--shadow-color) / 0.14);
+  --shadow-lg: 0 4px 8px -2px hsl(var(--shadow-color) / 0.08), 0 24px 48px -12px hsl(var(--shadow-color) / 0.22);
+
+  --animate-shimmer: shimmer 1.6s linear infinite;
+  --animate-scan: scan 2.2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to { background-position: 200% 0; }
+}
+@keyframes scan {
+  0%, 100% { transform: translateY(0); opacity: 0.0; }
+  10% { opacity: 1; }
+  50% { transform: translateY(var(--scan-distance, 160px)); opacity: 1; }
+  90% { opacity: 1; }
+}
+
+@layer base {
+  * { border-color: var(--border); }
+  html { color-scheme: light; }
+  html.dark { color-scheme: dark; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { background: color-mix(in oklab, var(--primary) 25%, transparent); }
+  :focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; border-radius: 6px; }
+  h1, h2, h3 { letter-spacing: -0.022em; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .tabular { font-variant-numeric: tabular-nums; }
+  .bg-grid {
+    background-image:
+      linear-gradient(var(--grid-line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+  .text-gradient {
+    background: linear-gradient(100deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .skeleton {
+    background: linear-gradient(90deg, var(--bg-subtle) 0%, var(--surface-2) 50%, var(--bg-subtle) 100%);
+    background-size: 200% 100%;
+    animation: var(--animate-shimmer);
+  }
+  .theme-transition, .theme-transition * {
+    transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* docx-preview output: keep it inside our surface */
+.docx-host .docx-wrapper { background: transparent !important; padding: 0 !important; }
+.docx-host .docx-wrapper > section.docx { box-shadow: var(--shadow-md) !important; margin: 0 auto 16px !important; }

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Newsreader:wght@100..900&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-bright":"#f8f9fd","surface-dim":"#d8dade","surface":"#f8f9fd","surface-tint":"#416279","on-tertiary-fixed":"#002112","on-secondary-fixed-variant":"#2b4a5f","on-primary-container":"#d0eaff","outline-variant":"#c2c7cd","on-secondary-container":"#47667d","surface-container-highest":"#e1e2e6","error-container":"#ffdad6","tertiary-fixed-dim":"#a0d2b3","inverse-surface":"#2e3134","on-secondary-fixed":"#001e2f","on-primary-fixed-variant":"#284a60","background":"#f8f9fd","surface-container-low":"#f2f3f7","inverse-on-surface":"#eff1f5","on-tertiary-fixed-variant":"#204f38","tertiary-container":"#427158","secondary":"#436278","tertiary-fixed":"#bbeecf","inverse-primary":"#a9cbe5","secondary-fixed-dim":"#abcae4","secondary-fixed":"#c8e6ff","surface-container-lowest":"#ffffff","on-secondary":"#ffffff","on-background":"#191c1f","on-tertiary":"#ffffff","on-error":"#ffffff","primary":"#315369","on-error-container":"#93000a","tertiary":"#2a5841","primary-fixed":"#c8e6ff","primary-fixed-dim":"#a9cbe5","error":"#ba1a1a","on-surface":"#191c1f","on-surface-variant":"#42474c","surface-container":"#eceef2","primary-container":"#4a6b82","on-primary-fixed":"#001e2e","on-primary":"#ffffff","outline":"#72787d","surface-variant":"#e1e2e6","surface-container-high":"#e7e8ec","on-tertiary-container":"#c0f3d3","secondary-container":"#c3e4fe"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin-mobile":"1.25rem","gutter":"1.5rem","margin":"3rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-md":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xl":"2.5rem"},fontFamily:{"body-sm":["Inter"],"label-sm":["Inter"],"metric-display":["Inter"],"headline-lg-mobile":["Newsreader"],"headline-lg":["Newsreader"],"body-md":["Inter"],"headline-sm":["Newsreader"],"display-lg":["Newsreader"],"title-sm":["Inter"],"body-lg":["Newsreader"],"display-lg-mobile":["Newsreader"],"headline-md":["Newsreader"],"label-md":["Inter"],"title-md":["Inter"]},fontSize:{"body-sm":["0.8125rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"label-sm":["0.75rem",{"lineHeight":"1rem","fontWeight":"500"}],"metric-display":["2rem",{"lineHeight":"2.25rem","fontWeight":"600"}],"headline-lg-mobile":["1.625rem",{"lineHeight":"2.125rem","fontWeight":"400"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","fontWeight":"400"}],"body-md":["0.9375rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","fontWeight":"500"}],"display-lg":["3rem",{"lineHeight":"3.5rem","fontWeight":"400"}],"title-sm":["1rem",{"lineHeight":"1.5rem","fontWeight":"600"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"400"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","fontWeight":"400"}],"headline-md":["1.5rem",{"lineHeight":"2rem","fontWeight":"500"}],"label-md":["0.8125rem",{"lineHeight":"1.125rem","fontWeight":"600"}],"title-md":["1.125rem",{"lineHeight":"1.625rem","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low border-r border-outline-variant/30 z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-md border-b border-outline-variant/20 flex items-center gap-space-sm bg-surface-container-lowest"><img alt="PPS4027 Portal Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WqAYLoonOsSzjqBZ6MDAKqtxQaQdYulzo6_FQJcT0l9GahweFqOttsENyytNdlBKzqDolI459ydqm1qRADCWnCChZkwSeh-iu-emqLSgIqeRY63FtIc-ieK9eCDoBOvHVhQZXKZfD5YEMQ3cLYzojr9gbWEOW_Rh-7dIK1CUaQB_-IWAiJJe4lq8MMTg8jx3qOSSx5co2qSS-E-e53D0ubU1sMNXQD59dTby8f-thiUwxtAux_eVceNUn_"/><div class="flex flex-col"><span class="font-title-sm text-title-sm text-primary tracking-tight leading-none">PPS4027</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Placement Training</span></div></div><div class="px-space-md pt-space-md pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Academic Modules</span></div><nav class="flex flex-col gap-1 px-space-sm" data-active-classes="bg-primary text-on-primary font-title-sm rounded-lg"><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-primary text-on-primary font-title-sm rounded-lg" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="learning" href="#"><span class="material-symbols-outlined text-[20px]">local_library</span><span>Learning</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="calendar" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span>Calendar</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="assignments" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span>Assignments</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="my-progress" href="#"><span class="material-symbols-outlined text-[20px]">trending_up</span><span>My Progress</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="my-results" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span>My Results</span></a></nav><div class="px-space-md pt-space-md pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Account & System</span></div><nav class="flex flex-col gap-1 px-space-sm" data-active-classes="bg-primary text-on-primary font-title-sm rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span>Notifications</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="privacy-data" href="#"><span class="material-symbols-outlined text-[20px]">shield</span><span>Privacy & Data</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="p-space-sm border-t border-outline-variant/30 bg-surface-container-lowest"><div class="flex items-center gap-space-sm p-space-xs rounded-lg border border-outline-variant/30 bg-surface-container-low"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiykzZs64hH-nW8Gb-FdsuvIPQH3c5C0jrYVSuNmPPsYqxqBAoHLBtnzpiXYPo2guX_D4A93NzapXhrrA53tnn1e97QMvSPk9guwtXP-Jgu1iMMExdohqdIYWQKTQmMFf-ldo_WL_RAHMHdDaQdQ7G-wP3X6PpfMlAxpQI64Ch-cfBHUo-37bFn4IewiZGxFGKmxjjaPRyOnx6CQbNUO1TYabc4O4MIscZwptZdVD6EGttATNZTyV27w"/><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface truncate">Aarav Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">PPS-2024-4027</span></div><span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm border border-tertiary/20">Active</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md border-b border-outline-variant/30 z-40 px-gutter flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex items-center gap-space-md"><img alt="PPS4027 Portal Logo" class="h-8 w-auto object-contain md:hidden" src="https://lh3.googleusercontent.com/aida/AEtjO1WqAYLoonOsSzjqBZ6MDAKqtxQaQdYulzo6_FQJcT0l9GahweFqOttsENyytNdlBKzqDolI459ydqm1qRADCWnCChZkwSeh-iu-emqLSgIqeRY63FtIc-ieK9eCDoBOvHVhQZXKZfD5YEMQ3cLYzojr9gbWEOW_Rh-7dIK1CUaQB_-IWAiJJe4lq8MMTg8jx3qOSSx5co2qSS-E-e53D0ubU1sMNXQD59dTby8f-thiUwxtAux_eVceNUn_"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface">Good morning, Aarav</span><span class="px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm border border-secondary/20">Batch of 2025</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Week 4 · Module 1: Resume Building</span></div></div><div class="flex items-center gap-space-md"><div class="relative hidden lg:block w-80"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-space-md py-1.5 bg-surface-container-low border border-outline-variant/40 rounded text-on-surface font-body-sm text-body-sm focus:outline-none focus:border-primary placeholder:text-outline" placeholder="Search modules, resources, deadlines..." type="text"/></div><div class="flex items-center bg-surface-container-low border border-outline-variant/40 rounded p-0.5"><button class="px-2 py-1 rounded bg-surface-container-lowest font-label-sm text-label-sm text-primary shadow-[0_1px_2px_rgba(30,33,36,0.04)] font-semibold" type="button">Student View</button><button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">Trainer View</button><button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">Admin View</button></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-xs pl-space-xs border-l border-outline-variant/30"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiykzZs64hH-nW8Gb-FdsuvIPQH3c5C0jrYVSuNmPPsYqxqBAoHLBtnzpiXYPo2guX_D4A93NzapXhrrA53tnn1e97QMvSPk9guwtXP-Jgu1iMMExdohqdIYWQKTQmMFf-ldo_WL_RAHMHdDaQdQ7G-wP3X6PpfMlAxpQI64Ch-cfBHUo-37bFn4IewiZGxFGKmxjjaPRyOnx6CQbNUO1TYabc4O4MIscZwptZdVD6EGttATNZTyV27w"/><span class="hidden xl:inline font-label-md text-label-md text-on-surface">Aarav</span></div></div></header><main class="relative pt-16 bg-background min-h-screen w-full px-gutter py-space-lg"><div class="flex flex-col w-full gap-space-lg max-w-[1320px] mx-auto text-on-surface">
+<!-- Top Hero & Weekly Agenda Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<!-- Module 1 Hero Card -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex flex-col sm:flex-row justify-between items-start gap-space-md z-10">
+<div class="flex flex-col gap-space-xs max-w-xl">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm tracking-wide uppercase">Core Placement Track</span>
+<span class="text-outline text-label-sm">·</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">PPS4027 Milestone 01</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface leading-snug mt-1">
+            Build a resume that gets noticed.
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-relaxed">
+            Module 1 benchmarks your CV against real industry job descriptions using explainable ATS checks, structure heuristics, and algorithmic parser diagnostics.
+          </p>
+</div>
+<div class="hidden sm:block flex-shrink-0">
+<img alt="Editorial Resume Review System Illustration" class="w-44 h-auto object-contain rounded-lg mix-blend-multiply opacity-95" src="https://lh3.googleusercontent.com/aida/AEtjO1W77F5ito7ggLWPFqRU0MWVri08m8j2MKHCVZR-d0jiRN786cSTjRUOvaq1hkNd-9n7s55mUHkpQFW8KRh8d-JPhSrz-bn_KkZzL0kXxFZ3AChlfyRT9zt58GlKSxJDBynz4jpNzYQgVxWHk5Ha9YYQY2k46RIDT5X4R1JFRtVfktnUCmgdl_dhS3fFSXMCaV9fTkR-XQyW6E5eFTOiPAC0xnf0FvTtBolQi76bSs7oFVJC0lhSZrJkcK6D"/>
+</div>
+</div>
+<div class="pt-space-lg mt-space-md flex flex-wrap items-center gap-space-md z-10">
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 bg-primary-container text-on-primary rounded-lg font-title-sm text-title-sm hover:bg-primary transition-all duration-150 shadow-sm active:scale-[0.99]" id="start-review-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">auto_read_pause</span>
+<span>Start resume review</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<a class="inline-flex items-center gap-1.5 px-space-md py-2.5 bg-surface-container-low text-on-surface hover:bg-surface-container-high rounded-lg font-body-sm text-body-sm transition-colors" href="#ca1-guidelines">
+<span class="material-symbols-outlined text-[18px] text-outline">description</span>
+<span>View CA1 guidelines (PDF)</span>
+</a>
+<div class="ml-auto hidden xl:flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm bg-surface-container-low px-3 py-1 rounded-full">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>ATS Parser Engine v4.2 Active</span>
+</div>
+</div>
+</div>
+<!-- This Week Compact Academic Schedule -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_month</span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">This Week</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-medium">Week 4 active</span>
+</div>
+<div class="mt-space-md flex flex-col gap-3">
+<!-- Item 1: Tuesday -->
+<div class="p-2.5 rounded-lg bg-surface-container-low/70 flex items-start gap-space-sm justify-between group transition-colors">
+<div class="flex items-start gap-2.5 min-w-0">
+<span class="w-2 h-2 rounded-full bg-tertiary mt-1.5 flex-shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-body-sm font-semibold text-on-surface truncate">Resume Structure & Formatting</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tuesday · Lecture release</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed/60 text-on-tertiary-fixed-variant font-label-sm text-label-sm flex-shrink-0">Done</span>
+</div>
+<!-- Item 2: Wednesday -->
+<div class="p-2.5 rounded-lg bg-surface-container-low/70 flex items-start gap-space-sm justify-between group">
+<div class="flex items-start gap-2.5 min-w-0">
+<span class="w-2 h-2 rounded-full bg-secondary mt-1.5 flex-shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-body-sm font-semibold text-on-surface truncate">Live Q&A w/ Mentors</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Wednesday · 17:00 IST (Online)</span>
+</div>
+</div>
+<button class="px-2.5 py-1 rounded bg-secondary text-on-secondary font-label-sm text-label-sm hover:opacity-95 transition-opacity flex items-center gap-1 flex-shrink-0" type="button">
+<span>Join</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</button>
+</div>
+<!-- Item 3: Thursday -->
+<div class="p-2.5 rounded-lg bg-surface-container-low/70 flex items-start gap-space-sm justify-between group">
+<div class="flex items-start gap-2.5 min-w-0">
+<span class="w-2 h-2 rounded-full bg-outline-variant mt-1.5 flex-shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-body-sm font-semibold text-on-surface truncate">Weekly MCQ Quiz 4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Thursday · Closes 23:59 IST</span>
+</div>
+</div>
+<button class="px-2.5 py-1 rounded bg-surface-container-highest hover:bg-outline-variant/50 text-on-surface font-label-sm text-label-sm transition-colors flex-shrink-0" type="button">
+              Start
+            </button>
+</div>
+</div>
+</div>
+<!-- Weekly Completion Bar -->
+<div class="mt-space-md pt-space-sm">
+<div class="flex items-center justify-between text-label-sm font-label-sm mb-1.5">
+<span class="text-on-surface-variant">Weekly task pace</span>
+<span class="font-semibold text-on-surface">2 of 3 completed (66%)</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 66.6%;"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- KPI Academic Metric Cards -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1: Course Progress -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-medium">Curriculum Progress</span>
+<span class="material-symbols-outlined text-primary text-[20px]">school</span>
+</div>
+<div class="my-space-sm flex items-baseline gap-2">
+<span class="font-metric-display text-metric-display text-on-surface font-semibold">38%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Week 4 of 15</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 38%;"></div>
+</div>
+<div class="flex justify-between text-label-sm font-label-sm text-on-surface-variant pt-1">
+<span>Mod 1: Resume (72%)</span>
+<span>Mod 2: GD (0%)</span>
+<span>Mod 3: PI (0%)</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Upcoming Events -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-medium">Next Academic Event</span>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Tomorrow</span>
+</div>
+<div class="my-space-sm">
+<h3 class="font-title-md text-title-md text-on-surface">Industry Resume Clinic</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">MS Teams Room 04 · 17:00 IST</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">person_outline</span>
+          Rajesh K., Ex-Amazon
+        </span>
+<span class="font-label-sm text-label-sm text-primary underline cursor-pointer">Add to iCal</span>
+</div>
+</div>
+<!-- Card 3: Pending Tasks -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-medium">Continuous Assessment</span>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-medium">2 Due Soon</span>
+</div>
+<div class="my-space-sm">
+<h3 class="font-title-md text-title-md text-on-surface">CA1 Draft Review</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Upload final PDF to Moodle before Monday</p>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low p-2 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
+          Due Oct 28, 23:59 IST
+        </span>
+<span class="font-label-sm text-label-sm font-semibold text-error">4d remaining</span>
+</div>
+</div>
+</section>
+<!-- Resume Diagnostics & Deep Heuristic Grid (3 Columns) -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Resume Diagnostics & Parser Analysis</h2>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">Aarav_Sharma_CV_v2.4.pdf</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Benchmark evaluation computed for <span class="text-on-surface font-medium">Data Analyst @ Thoughtworks</span> · Today, 09:15 AM
+        </p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm hover:bg-surface-container-high transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">cloud_upload</span>
+<span>Re-upload</span>
+</button>
+<button class="px-3 py-1.5 rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm hover:bg-surface-container-high transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download Audit</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<!-- Card A: Explainable Metric Breakdown (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-title-sm text-title-sm text-on-surface">Explainable Metrics</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Weighted Scores</span>
+</div>
+<div class="flex flex-col gap-space-md mt-space-sm">
+<!-- Metric 1 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface font-medium">ATS Compatibility</span>
+<span class="font-semibold text-primary">84 / 100</span>
+</div>
+<div class="w-full h-2 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 84%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Machine-readable text blocks, clean UTF-8 encoding.</span>
+</div>
+<!-- Metric 2 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface font-medium">Parseability</span>
+<span class="font-semibold text-tertiary">91 / 100</span>
+</div>
+<div class="w-full h-2 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 91%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Standard heading taxonomy recognized without unparsed tables.</span>
+</div>
+<!-- Metric 3 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface font-medium">Keyword JD Alignment</span>
+<span class="font-semibold text-secondary">68 / 100</span>
+</div>
+<div class="w-full h-2 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 68%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5 target keywords absent in experience bullets.</span>
+</div>
+<!-- Metric 4 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface font-medium">Structural Integrity</span>
+<span class="font-semibold text-primary">88 / 100</span>
+</div>
+<div class="w-full h-2 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 88%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Contact header, Education, Experience, & Projects verified.</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Target Profile: Thoughtworks</span>
+<a class="text-primary hover:underline font-label-md text-label-md" href="#">Audit specs →</a>
+</div>
+</div>
+<!-- Card B: Health & Diagnostics Checks (4 cols) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-title-sm text-title-sm text-on-surface">Parser Diagnostics</span>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-fixed px-2 py-0.5 rounded">2 Warnings</span>
+</div>
+<div class="flex flex-col gap-3 mt-space-sm">
+<!-- Passed Check 1 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low/60 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-tertiary text-[18px] mt-0.5">check_circle</span>
+<div class="flex flex-col text-body-sm font-body-sm leading-snug">
+<span class="font-medium text-on-surface">Linear Text Stream</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Zero complex nested tables or multi-column text collision.</span>
+</div>
+</div>
+<!-- Passed Check 2 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low/60 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-tertiary text-[18px] mt-0.5">check_circle</span>
+<div class="flex flex-col text-body-sm font-body-sm leading-snug">
+<span class="font-medium text-on-surface">Essential Sections Detected</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Contact info, Education, Tech Stack, & Projects identified.</span>
+</div>
+</div>
+<!-- Warning Check 1 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low/60 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">warning</span>
+<div class="flex flex-col text-body-sm font-body-sm leading-snug">
+<span class="font-medium text-on-surface">Typography Inconsistency</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">2 unreferenced secondary serif fonts detected in section headers.</span>
+</div>
+</div>
+<!-- Warning Check 2 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low/60 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">warning</span>
+<div class="flex flex-col text-body-sm font-body-sm leading-snug">
+<span class="font-medium text-on-surface">Missing Core Keywords</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Target JD mandates explicit presence of statistical metrics.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm">
+<p class="font-label-sm text-label-sm text-outline">
+            Note: Placement tests check for ATS v2.1 compliance before recruiter handoff.
+          </p>
+</div>
+</div>
+<!-- Card C: Skill Gaps & JD Alignment (3 cols) -->
+<div class="lg:col-span-3 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-title-sm text-title-sm text-on-surface">Keyword Gaps</span>
+<span class="material-symbols-outlined text-outline text-[18px]">tune</span>
+</div>
+<div class="mt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Benchmark Role:</span>
+<p class="font-title-sm text-body-sm font-semibold text-on-surface mt-0.5">Data Analyst & BI</p>
+</div>
+<div class="mt-space-md flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-outline font-medium">Missing JD Terms:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Data Modelling</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Statistics</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">ETL Pipelines</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Tableau LOD</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">A/B Testing</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center gap-1.5 text-primary mb-1">
+<span class="material-symbols-outlined text-[16px]">lightbulb</span>
+<span class="font-label-md text-label-md">Trainer Recommendation</span>
+</div>
+<p class="font-body-sm text-label-sm text-on-surface-variant leading-relaxed">
+            Incorporate capstone coursework projects demonstrating ETL pipeline building and hypothesis testing.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Grid: Recent Analyses & Academic Deadlines / Notifications -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left: Recent Analyses Table (8 cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Recent Resumes & Historical Audits</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Compare your draft iterations against varying job roles.</p>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-sm" type="button">All Drafts</button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Final Versions</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-3 rounded-l">Resume Filename</th>
+<th class="py-2.5 px-3">Target Profile</th>
+<th class="py-2.5 px-3 text-center">ATS Score</th>
+<th class="py-2.5 px-3 text-center">JD Match</th>
+<th class="py-2.5 px-3">Date</th>
+<th class="py-2.5 px-3 text-right rounded-r">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">picture_as_pdf</span>
+<span class="font-medium text-on-surface">Aarav_Sharma_CV_v2.4.pdf</span>
+</div>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">Data Analyst · Thoughtworks</td>
+<td class="py-3 px-3 text-center">
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-semibold">84%</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">68%</span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant font-label-sm text-label-sm">Oct 24, 2024</td>
+<td class="py-3 px-3 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container-high hover:bg-outline-variant/40 text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                  View
+                </button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">picture_as_pdf</span>
+<span class="font-medium text-on-surface">Aarav_Sharma_CV_v2.1.pdf</span>
+</div>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">Business Analyst · Deloitte</td>
+<td class="py-3 px-3 text-center">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">76%</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">62%</span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant font-label-sm text-label-sm">Oct 20, 2024</td>
+<td class="py-3 px-3 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container-high hover:bg-outline-variant/40 text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                  View
+                </button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[18px]">description</span>
+<span class="font-medium text-on-surface">Aarav_CV_Draft1.docx</span>
+</div>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">General Tech Profile</td>
+<td class="py-3 px-3 text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">64%</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">51%</span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant font-label-sm text-label-sm">Oct 15, 2024</td>
+<td class="py-3 px-3 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container-high hover:bg-outline-variant/40 text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                  View
+                </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Showing 3 of 6 parsed drafts</span>
+<button class="text-primary hover:underline font-label-md text-label-md flex items-center gap-1" type="button">
+<span>View Archive</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Right: Upcoming Deadlines & Quiet In-App Feed (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Upcoming Deadlines Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-2">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Placement Deadlines</span>
+<span class="material-symbols-outlined text-outline text-[18px]">flag</span>
+</div>
+<div class="flex flex-col gap-2.5 mt-space-xs">
+<!-- Deadline 1 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-body-sm font-semibold text-on-surface">CA1 Resume Submission</span>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-medium">Active</span>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>Oct 28, 23:59 IST</span>
+<span class="font-semibold text-error">4 days remaining</span>
+</div>
+</div>
+<!-- Deadline 2 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-body-sm font-semibold text-on-surface">CA2 GD Slot Selection</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Upcoming</span>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>Nov 12, 18:00 IST</span>
+<span>Opens in 2 wks</span>
+</div>
+</div>
+</div>
+</div>
+<!-- In-app Academic Activity Feed -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-2">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Notifications & Activity</span>
+<span class="font-label-sm text-label-sm text-outline">Quiet Feed</span>
+</div>
+<div class="flex flex-col gap-3 mt-space-xs">
+<!-- Feed Item 1 -->
+<div class="flex items-start gap-2.5">
+<div class="w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Trainer feedback posted on Module 1 Worksheet.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 hours ago · Prof. Ananya Iyer</span>
+</div>
+</div>
+<!-- Feed Item 2 -->
+<div class="flex items-start gap-2.5">
+<div class="w-1.5 h-1.5 rounded-full bg-secondary mt-2"></div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">MS Teams calendar invite sent for Wednesday AMA.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Yesterday · Career Services</span>
+</div>
+</div>
+<!-- Feed Item 3 -->
+<div class="flex items-start gap-2.5">
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant mt-2"></div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Week 4 MCQ now accessible on MS Forms.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 days ago · Assessment Team</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs">
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center justify-center py-1 bg-surface-container-low rounded" href="#">
+            Mark all notifications as read
+          </a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple interactive micro-interaction for resume review button
+  document.getElementById('start-review-btn')?.addEventListener('click', function () {
+    const btn = this;
+    const originalText = btn.innerHTML;
+    btn.innerHTML = `
+      <span class="material-symbols-outlined text-[18px] animate-spin">refresh</span>
+      <span>Opening ATS Evaluator...</span>
+    `;
+    setTimeout(() => {
+      btn.innerHTML = originalText;
+    }, 1200);
+  });
+</script></main></div></body></html>

@@ -1,0 +1,73 @@
+# PPS theme — based on the Stitch "Academic Placement Portal" tokens
+# (stitch_export/.../academic_placement_portal/DESIGN.md): mist blue primary,
+# sage / amber / crimson semantics, Manrope headings + Inter body.
+
+[server]
+maxUploadSize = 5
+enableStaticServing = true
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+headingFont = "Manrope:https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&display=swap"
+codeFont = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+baseFontSize = 15
+headingFontSizes = ["30px", "22px", "18px", "16px", "14px", "12px"]
+headingFontWeights = [700, 700, 650, 600, 600, 600]
+baseRadius = "10px"
+buttonRadius = "8px"
+showWidgetBorder = true
+showSidebarBorder = true
+linkUnderline = false
+
+[theme.light]
+primaryColor = "#315369"
+backgroundColor = "#FBFCFE"
+secondaryBackgroundColor = "#F0F4F9"
+textColor = "#171C21"
+borderColor = "#DDE3EA"
+linkColor = "#315369"
+dataframeHeaderBackgroundColor = "#F0F4F9"
+blueColor = "#3B6E91"
+greenColor = "#3F7A5A"
+greenBackgroundColor = "#E7F2EB"
+orangeColor = "#A86A22"
+orangeBackgroundColor = "#FBF1E3"
+yellowColor = "#9A7B12"
+redColor = "#B3261E"
+redBackgroundColor = "#FBE4E2"
+violetColor = "#6A5A9A"
+grayColor = "#5E6670"
+chartCategoricalColors = ["#315369", "#3F7A5A", "#A86A22", "#B3261E", "#6A5A9A", "#5E6670"]
+
+[theme.light.sidebar]
+backgroundColor = "#F4F7FB"
+secondaryBackgroundColor = "#E7EDF4"
+borderColor = "#DDE3EA"
+
+[theme.dark]
+primaryColor = "#8DB8D6"
+backgroundColor = "#0F1419"
+secondaryBackgroundColor = "#182029"
+textColor = "#E4E9EF"
+borderColor = "#2A3440"
+linkColor = "#8DB8D6"
+dataframeHeaderBackgroundColor = "#182029"
+blueColor = "#8DB8D6"
+greenColor = "#7FC39C"
+orangeColor = "#E0A85C"
+yellowColor = "#E2C55C"
+redColor = "#F08A80"
+violetColor = "#B4A6E0"
+grayColor = "#9AA4AF"
+chartCategoricalColors = ["#8DB8D6", "#7FC39C", "#E0A85C", "#F08A80", "#B4A6E0", "#9AA4AF"]
+
+[theme.dark.sidebar]
+backgroundColor = "#0B1015"
+secondaryBackgroundColor = "#151C24"
+borderColor = "#222C36"

@@ -1,0 +1,575 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-on-surface":"#eff1f5","inverse-surface":"#2e3134","tertiary-container":"#427158","surface-container-high":"#e7e8ec","outline":"#72787d","on-secondary-fixed-variant":"#2b4a5f","on-tertiary-fixed-variant":"#204f38","inverse-primary":"#a9cbe5","on-surface":"#191c1f","surface-container-lowest":"#ffffff","on-secondary-fixed":"#001e2f","surface":"#f8f9fd","primary-fixed":"#c8e6ff","surface-bright":"#f8f9fd","tertiary-fixed":"#bbeecf","surface-container-low":"#f2f3f7","on-tertiary-container":"#c0f3d3","on-secondary":"#ffffff","secondary-container":"#c3e4fe","surface-container-highest":"#e1e2e6","surface-dim":"#d8dade","on-error-container":"#93000a","secondary-fixed-dim":"#abcae4","primary":"#315369","background":"#f8f9fd","on-surface-variant":"#42474c","error-container":"#ffdad6","error":"#ba1a1a","tertiary-fixed-dim":"#a0d2b3","tertiary":"#2a5841","on-primary-fixed":"#001e2e","on-primary":"#ffffff","surface-container":"#eceef2","surface-tint":"#416279","on-tertiary-fixed":"#002112","secondary":"#436278","on-primary-fixed-variant":"#284a60","primary-fixed-dim":"#a9cbe5","primary-container":"#4a6b82","on-error":"#ffffff","on-background":"#191c1f","outline-variant":"#c2c7cd","secondary-fixed":"#c8e6ff","surface-variant":"#e1e2e6","on-tertiary":"#ffffff","on-secondary-container":"#47667d","on-primary-container":"#d0eaff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","margin":"3rem","margin-mobile":"1.25rem","space-xl":"2.5rem","gutter-mobile":"1rem","space-xs":"0.25rem","space-md":"1rem","space-sm":"0.5rem","space-lg":"1.5rem"},fontFamily:{"metric-display":["Inter"],"headline-md":["Newsreader"],"body-md":["Inter"],"display-lg":["Newsreader"],"display-lg-mobile":["Newsreader"],"headline-sm":["Newsreader"],"label-md":["Inter"],"body-lg":["Newsreader"],"title-md":["Inter"],"title-sm":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Newsreader"],"headline-lg":["Newsreader"],"label-sm":["Inter"]},fontSize:{"metric-display":["2rem",{"lineHeight":"2.25rem","fontWeight":"600"}],"headline-md":["1.5rem",{"lineHeight":"2rem","fontWeight":"500"}],"body-md":["0.9375rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"display-lg":["3rem",{"lineHeight":"3.5rem","fontWeight":"400"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","fontWeight":"400"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","fontWeight":"500"}],"label-md":["0.8125rem",{"lineHeight":"1.125rem","fontWeight":"600"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"400"}],"title-md":["1.125rem",{"lineHeight":"1.625rem","fontWeight":"600"}],"title-sm":["1rem",{"lineHeight":"1.5rem","fontWeight":"600"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"headline-lg-mobile":["1.625rem",{"lineHeight":"2.125rem","fontWeight":"400"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","fontWeight":"400"}],"label-sm":["0.75rem",{"lineHeight":"1rem","fontWeight":"500"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low border-r border-outline-variant/30 z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-md border-b border-outline-variant/20 flex items-center gap-space-sm bg-surface-container-lowest"><img alt="PPS4027 Portal Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WqAYLoonOsSzjqBZ6MDAKqtxQaQdYulzo6_FQJcT0l9GahweFqOttsENyytNdlBKzqDolI459ydqm1qRADCWnCChZkwSeh-iu-emqLSgIqeRY63FtIc-ieK9eCDoBOvHVhQZXKZfD5YEMQ3cLYzojr9gbWEOW_Rh-7dIK1CUaQB_-IWAiJJe4lq8MMTg8jx3qOSSx5co2qSS-E-e53D0ubU1sMNXQD59dTby8f-thiUwxtAux_eVceNUn_"><div class="flex flex-col"><span class="font-title-sm text-title-sm text-primary tracking-tight leading-none">PPS4027</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Placement Training</span></div></div><div class="px-space-md pt-space-md pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Academic Modules</span></div><nav class="flex flex-col gap-1 px-space-sm" data-active-classes="bg-primary text-on-primary font-title-sm rounded-lg"><a class="flex items-center px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#">Dashboard</a><a class="flex items-center px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="learning" href="#">Learning</a><a class="flex items-center px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="calendar" href="#">Calendar</a><a class="flex items-center px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="assignments" href="#">Assignments</a><a aria-current="page" class="flex items-center px-space-sm py-2 transition-colors bg-primary text-on-primary font-title-sm rounded-lg" data-path="my-progress" href="#">My Progress</a><a class="flex items-center px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="my-results" href="#">My Results</a></nav><div class="px-space-md pt-space-md pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Account &amp; System</span></div><nav class="flex flex-col gap-1 px-space-sm" data-active-classes="bg-primary text-on-primary font-title-sm rounded-lg"><a class="flex items-center px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#">Notifications</a><a class="flex items-center px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="privacy-data" href="#">Privacy &amp; Data</a><a class="flex items-center px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-sm border-t border-outline-variant/30 bg-surface-container-lowest"><div class="flex items-center gap-space-sm p-space-xs rounded-lg border border-outline-variant/30 bg-surface-container-low"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiykzZs64hH-nW8Gb-FdsuvIPQH3c5C0jrYVSuNmPPsYqxqBAoHLBtnzpiXYPo2guX_D4A93NzapXhrrA53tnn1e97QMvSPk9guwtXP-Jgu1iMMExdohqdIYWQKTQmMFf-ldo_WL_RAHMHdDaQdQ7G-wP3X6PpfMlAxpQI64Ch-cfBHUo-37bFn4IewiZGxFGKmxjjaPRyOnx6CQbNUO1TYabc4O4MIscZwptZdVD6EGttATNZTyV27w"><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface truncate">Aarav Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">PPS-2024-4027</span></div><span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm border border-tertiary/20">Active</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md border-b border-outline-variant/30 z-40 px-gutter flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex items-center gap-space-md"><img alt="PPS4027 Portal Logo" class="h-8 w-auto object-contain md:hidden" src="https://lh3.googleusercontent.com/aida/AEtjO1WqAYLoonOsSzjqBZ6MDAKqtxQaQdYulzo6_FQJcT0l9GahweFqOttsENyytNdlBKzqDolI459ydqm1qRADCWnCChZkwSeh-iu-emqLSgIqeRY63FtIc-ieK9eCDoBOvHVhQZXKZfD5YEMQ3cLYzojr9gbWEOW_Rh-7dIK1CUaQB_-IWAiJJe4lq8MMTg8jx3qOSSx5co2qSS-E-e53D0ubU1sMNXQD59dTby8f-thiUwxtAux_eVceNUn_"><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface">Good morning, Aarav</span><span class="px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm border border-secondary/20">Batch of 2025</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Week 4 · Module 1: Resume Building</span></div></div><div class="flex items-center gap-space-md"><div class="relative hidden lg:block w-80"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-space-md py-1.5 bg-surface-container-low border border-outline-variant/40 rounded text-on-surface font-body-sm text-body-sm focus:outline-none focus:border-primary placeholder:text-outline" placeholder="Search modules, resources, deadlines..." type="text"></div><div class="flex items-center bg-surface-container-low border border-outline-variant/40 rounded p-0.5"><button class="px-2 py-1 rounded bg-surface-container-lowest font-label-sm text-label-sm text-primary shadow-[0_1px_2px_rgba(30,33,36,0.04)] font-semibold" type="button">Student View</button><button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">Trainer View</button><button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">Admin View</button></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-xs pl-space-xs border-l border-outline-variant/30"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiykzZs64hH-nW8Gb-FdsuvIPQH3c5C0jrYVSuNmPPsYqxqBAoHLBtnzpiXYPo2guX_D4A93NzapXhrrA53tnn1e97QMvSPk9guwtXP-Jgu1iMMExdohqdIYWQKTQmMFf-ldo_WL_RAHMHdDaQdQ7G-wP3X6PpfMlAxpQI64Ch-cfBHUo-37bFn4IewiZGxFGKmxjjaPRyOnx6CQbNUO1TYabc4O4MIscZwptZdVD6EGttATNZTyV27w"><span class="hidden xl:inline font-label-md text-label-md text-on-surface">Aarav</span></div></div></header><main class="relative pt-16 bg-background min-h-screen w-full px-gutter py-space-lg"><div class="flex flex-col w-full">
+<div class="max-w-[1320px] mx-auto w-full flex flex-col gap-space-xl pb-16">
+<!-- Section 1: Editorial Academic Header -->
+<header class="flex flex-col gap-space-sm pt-2">
+<!-- Breadcrumb & Metadata -->
+<div class="flex flex-wrap items-center justify-between gap-y-2">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 font-label-sm text-label-sm text-outline">
+<span class="">Academic Modules</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-medium">My Progress</span>
+<span class="text-outline-variant">/</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Cohort AY 2024-25</span>
+</nav>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-tertiary">verified</span>
+            Curriculum Status: In Good Standing
+          </span>
+</div>
+</div>
+<!-- Main Title & Action Row -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mt-1">
+<div class="flex flex-col max-w-3xl">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            My Academic Progress &amp; Milestones
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5 leading-relaxed">
+            A comprehensive record of your 15-week placement preparation journey across resume engineering, communicative rhetoric, and clinical interview simulations.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-end shrink-0">
+<button class="inline-flex items-center gap-2 px-3.5 py-2 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-colors duration-150" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">download</span>
+<span class="">Download Progress Dossier (PDF)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded bg-primary-container text-on-primary font-label-md text-label-md hover:opacity-95 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[18px]">rule</span>
+<span class="">Syllabus Guide</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Section 2: Core Overview Panels (Tonal Planar Layering) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Overall Course Metric (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Semester Momentum</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-medium">Week 5 in Session</span>
+</div>
+<div class="flex items-baseline gap-3 mt-2">
+<span class="font-metric-display text-metric-display text-on-surface tracking-tight">42%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Completed (6 of 15 Weeks archived)</span>
+</div>
+<!-- Clean Horizontal Progress Bar -->
+<div class="w-full bg-surface-container-highest h-2 rounded-full mt-4 overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500 ease-out" style="width: 42%;"></div>
+</div>
+<div class="grid grid-cols-3 gap-3 mt-6 pt-5 bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Resources</span>
+<span class="font-title-sm text-title-sm text-on-surface mt-0.5">18 / 42</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">43% reviewed</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">MCQ Quizzes</span>
+<span class="font-title-sm text-title-sm text-on-surface mt-0.5">4 / 12</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Avg. 88.5%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Assessments</span>
+<span class="font-title-sm text-title-sm text-tertiary mt-0.5">1 Active</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">CA1 in draft</span>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-4 pt-3 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">event_available</span>
+          Next major milestone checkpoint unlocks on <strong>Monday, Nov 4</strong>.
+        </p>
+</div>
+<!-- Continuous Assessments Card (3 Cols) -->
+<div class="lg:col-span-3 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Continuous Evaluations</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">100% Total</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1">Weighted Tasks</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Formal components evaluated for placement shortlisting.</p>
+<div class="flex flex-col gap-2.5 mt-4">
+<!-- CA1 Pill -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">CA1: CV Dossier</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-[11px] font-semibold">30% Wt</span>
+</div>
+<!-- CA2 Pill -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">CA2: Group Pitch</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-outline font-label-sm text-[11px] font-semibold">35% Wt</span>
+</div>
+<!-- CA3 Pill -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">CA3: Viva &amp; Mock</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-outline font-label-sm text-[11px] font-semibold">35% Wt</span>
+</div>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-3 flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+          CA1 Due date: Oct 28, 23:59 IST
+        </span>
+</div>
+<!-- Next Best Action Callout (4 Cols) -->
+<div class="lg:col-span-4 bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold uppercase tracking-wider">
+              Curated Priority
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Week 4 Activity</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-2.5">Next Step for Week 4</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            You completed the ATS Keyword Calibration lecture. Upload your single-column CV draft and attempt the Formative MCQ before Thursday to unlock faculty feedback.
+          </p>
+<div class="mt-4 p-3 rounded-lg bg-surface-container-lowest flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">info</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-body-sm text-on-surface font-medium">Formative MCQ #4</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">10 questions · 15 mins · Passing score 80%</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 mt-5">
+<a class="flex-1 text-center px-3.5 py-2 rounded bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" href="#">
+            Go to CA1 Guided Upload
+          </a>
+<a class="text-center px-3.5 py-2 rounded bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" href="#">
+            Take MCQ 4
+          </a>
+</div>
+</div>
+</section>
+<!-- Section 3: Three-Trimester Pedagogical Modules -->
+<section class="flex flex-col gap-space-md mt-2">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-2 pb-1">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Curriculum Trimesters</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Progress segmented into foundational preparation tiers.</p>
+</div>
+<span class="font-label-sm text-label-sm text-outline">15 Total Academic Weeks · 3 Curricular Blocks</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Module 1: Active -->
+<article class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Block 01</span>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">In Progress</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mt-2.5">
+              Resume Building &amp; ATS Screening
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+              Weeks 1 to 5 · Foundational formatting, quantifiable metrics, LaTeX &amp; Markdown exports, keyword scoring algorithms.
+            </p>
+<div class="mt-4 pt-3">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-outline">Completion</span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">78%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 78%;"></div>
+</div>
+</div>
+<ul class="flex flex-col gap-2 mt-4 pt-3 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="">4 of 5 Weeks actively concluded</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="">14 of 16 Core tasks marked verified</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">pending</span>
+<span class="">CA1 Dossier submission opens Thursday</span>
+</li>
+</ul>
+</div>
+<div class="mt-6 pt-3">
+<span class="inline-block w-full text-center py-2 px-3 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">
+              Current Focus: Week 4 Submissions
+            </span>
+</div>
+</article>
+<!-- Module 2: Upcoming -->
+<article class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between opacity-90">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Block 02</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Starts Nov 4</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mt-2.5">
+              Group Discussion &amp; Case Rhetoric
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+              Weeks 6 to 10 · Problem framing, structured consensus, vocal modulation, conflict navigation, and micro-presentations.
+            </p>
+<div class="mt-4 pt-3">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-outline">Completion</span>
+<span class="font-title-sm text-title-sm text-outline font-semibold">0%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-outline-variant h-full rounded-full" style="width: 0%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2 mt-4 pt-3 font-body-sm text-body-sm text-on-surface-variant">
+<div class="p-2.5 rounded bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-[11px] text-outline uppercase font-semibold">Key Deliverables</span>
+<span class="text-on-surface font-medium">3 Live Roundtable Simulations</span>
+<span class="text-outline text-xs leading-normal">CA2: Cohort Case Presentation (35% overall weighting)</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-3">
+<span class="inline-block w-full text-center py-2 px-3 rounded bg-surface-container text-outline font-label-md text-label-md">
+              Syllabus Available for Preview
+            </span>
+</div>
+</article>
+<!-- Module 3: Upcoming -->
+<article class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between opacity-90">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Block 03</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Starts Dec 2</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mt-2.5">
+              Technical &amp; Personal Interview Clinics
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+              Weeks 11 to 15 · STAR behavioral drills, system design articulation, HR psychometric simulations, and faculty panels.
+            </p>
+<div class="mt-4 pt-3">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-outline">Completion</span>
+<span class="font-title-sm text-title-sm text-outline font-semibold">0%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-outline-variant h-full rounded-full" style="width: 0%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2 mt-4 pt-3 font-body-sm text-body-sm text-on-surface-variant">
+<div class="p-2.5 rounded bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-[11px] text-outline uppercase font-semibold">Key Deliverables</span>
+<span class="text-on-surface font-medium">1-on-1 Faculty Mock &amp; Video Audit</span>
+<span class="text-outline text-xs leading-normal">CA3: Final Viva Voce &amp; Offer Readiness (35% weighting)</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-3">
+<span class="inline-block w-full text-center py-2 px-3 rounded bg-surface-container text-outline font-label-md text-label-md">
+              Unlocks in Week 11
+            </span>
+</div>
+</article>
+</div>
+</section>
+<!-- Section 4: Module 1 Detailed Weekly Syllabus Breakdown -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface">Weekly Syllabus Breakdown</h2>
+<span class="px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-semibold">Module 1 Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Granular state for current trimester (Weeks 1 through 5). Click any row to expand individual sub-task details.
+          </p>
+</div>
+<div class="flex items-center gap-2 self-start sm:self-auto">
+<span class="font-label-sm text-label-sm text-outline">Filter:</span>
+<button class="px-2.5 py-1 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface font-medium">All (5)</button>
+<button class="px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface">Completed (3)</button>
+<button class="px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface">Action Required (1)</button>
+</div>
+</div>
+<!-- Weekly Items Stack -->
+<div class="flex flex-col gap-2.5">
+<!-- Week 1: Completed -->
+<div class="p-space-md rounded-lg bg-surface-container-low transition-colors duration-150">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-tertiary text-[24px] mt-0.5 shrink-0">check_circle</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-title-sm text-title-sm text-on-surface">Week 1: Placement Orientation &amp; CV Audit Baseline</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-[11px] font-semibold">100% Completed</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Archived Sep 30 · Diagnostic scoring of entry CV, gap matrix identification, introductory cohort lecture.
+                </span>
+</div>
+</div>
+<div class="flex items-center gap-4 shrink-0 pl-9 md:pl-0">
+<div class="flex flex-col md:items-end">
+<span class="font-label-sm text-label-sm text-outline">Submission</span>
+<span class="font-title-sm text-body-sm text-on-surface font-medium">Diagnostic: 62/100</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">done_all</span>
+</div>
+</div>
+</div>
+<!-- Week 2: Completed -->
+<div class="p-space-md rounded-lg bg-surface-container-low transition-colors duration-150">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-tertiary text-[24px] mt-0.5 shrink-0">check_circle</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-title-sm text-title-sm text-on-surface">Week 2: Experience &amp; Capstone Articulation</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-[11px] font-semibold">100% Completed</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Archived Oct 7 · The XYZ action formula (Accomplished [X] as measured by [Y], by doing [Z]), GitHub repository link curation.
+                </span>
+</div>
+</div>
+<div class="flex items-center gap-4 shrink-0 pl-9 md:pl-0">
+<div class="flex flex-col md:items-end">
+<span class="font-label-sm text-label-sm text-outline">Submission</span>
+<span class="font-title-sm text-body-sm text-on-surface font-medium">MCQ 2: 90%</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">done_all</span>
+</div>
+</div>
+</div>
+<!-- Week 3: Completed -->
+<div class="p-space-md rounded-lg bg-surface-container-low transition-colors duration-150">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-tertiary text-[24px] mt-0.5 shrink-0">check_circle</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-title-sm text-title-sm text-on-surface">Week 3: Core Structure &amp; Typography for Parsers</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-[11px] font-semibold">100% Completed</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Archived Oct 14 · Eliminating tables, multi-columns, and textboxes. Font pairing conventions, whitespace balance.
+                </span>
+</div>
+</div>
+<div class="flex items-center gap-4 shrink-0 pl-9 md:pl-0">
+<div class="flex flex-col md:items-end">
+<span class="font-label-sm text-label-sm text-outline">Submission</span>
+<span class="font-title-sm text-body-sm text-on-surface font-medium">MCQ 3: 85%</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">done_all</span>
+</div>
+</div>
+</div>
+<!-- Week 4: In Progress (Active Callout Item) -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-primary text-[24px] mt-0.5 shrink-0">radio_button_checked</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-title-sm text-title-sm text-on-surface">Week 4: ATS Keywords &amp; Target Role Calibration</span>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-[11px] font-semibold">75% In Progress</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[11px]">Current Week</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Due Oct 24, 23:59 IST · Parsing heuristics across Greenhouse, Lever, and Workday. Keyword density benchmarks.
+                </span>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0 pl-9 md:pl-0">
+<a class="px-3 py-1.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary-container transition-colors" href="#">
+                Resume Work
+              </a>
+</div>
+</div>
+<!-- Micro Subtask Checklist -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 pt-3 pl-9">
+<div class="p-2 rounded bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[16px]">task_alt</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Reading Material</span>
+<span class="ml-auto font-label-sm text-[11px] text-tertiary font-semibold">Done</span>
+</div>
+<div class="p-2 rounded bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[16px]">task_alt</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Lecture Video</span>
+<span class="ml-auto font-label-sm text-[11px] text-tertiary font-semibold">Done</span>
+</div>
+<div class="p-2 rounded bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">edit_note</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Worksheet Upload</span>
+<span class="ml-auto font-label-sm text-[11px] text-primary font-semibold">Drafting</span>
+</div>
+<div class="p-2 rounded bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[16px]">pending</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">MCQ Quiz 4</span>
+<span class="ml-auto font-label-sm text-[11px] text-outline font-semibold">Pending</span>
+</div>
+</div>
+</div>
+<!-- Week 5: Locked -->
+<div class="p-space-md rounded-lg bg-surface-container opacity-85">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-outline text-[24px] mt-0.5 shrink-0">lock</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-title-sm text-title-sm text-on-surface-variant">Week 5: Final CA1 Submission &amp; Blind Peer Review</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-outline font-label-sm text-[11px] font-semibold">Unlocks Oct 30</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">
+                  Formal submission gate for Continuous Assessment 1 (Resume Dossier + ATS verification scorecard).
+                </span>
+</div>
+</div>
+<div class="flex items-center gap-4 shrink-0 pl-9 md:pl-0">
+<span class="font-label-sm text-label-sm text-outline">Prerequisite: Week 4 MCQ</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Continuous Assessment (CA) Registry & Rubric Matrix -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Continuous Assessment (CA) Registry</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Formal grade weightings required for academic placement clearance and tier-1 referral endorsements.
+          </p>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Passing Standard: Minimum 75% per CA unit</span>
+</div>
+<!-- Responsive Table View -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 font-semibold">Assessment</th>
+<th class="py-3 px-4 font-semibold">Weight</th>
+<th class="py-3 px-4 font-semibold">Evaluator</th>
+<th class="py-3 px-4 font-semibold">Due Date</th>
+<th class="py-3 px-4 font-semibold">Rubric Coverage</th>
+<th class="py-3 px-4 font-semibold">Status</th>
+<th class="py-3 px-4 text-right font-semibold">Actions</th>
+</tr>
+</thead>
+<tbody>
+<!-- Row 1: CA1 -->
+<tr class="hover:bg-surface-container-low transition-colors duration-100">
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-title-sm text-body-sm text-on-surface font-semibold">CA1: Professional CV &amp; Dossier</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">ATS Compatibility + 2 Domain Variants</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-semibold text-on-surface">30%</td>
+<td class="py-3.5 px-4 text-on-surface-variant">Prof. M. Venkatesh &amp; ATS Bot</td>
+<td class="py-3.5 px-4 text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary">calendar_clock</span>
+<span class="">Oct 28, 2024</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant">
+<span class="">Layout (20), Impact Metrics (40), Keywords (40)</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-[11px] font-semibold">
+                  Drafting (Step 3/4)
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<a class="text-primary hover:underline font-label-md text-label-md font-semibold" href="#">Open Workspace →</a>
+</td>
+</tr>
+<!-- Row 2: CA2 -->
+<tr class="hover:bg-surface-container-low transition-colors duration-100">
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-title-sm text-body-sm text-on-surface font-semibold">CA2: Group Rhetoric &amp; Case Pitch</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Live moderation + Peer critique dossier</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-semibold text-on-surface">35%</td>
+<td class="py-3.5 px-4 text-on-surface-variant">Dr. S. Nair (Communications Panel)</td>
+<td class="py-3.5 px-4 text-outline">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px]">calendar_today</span>
+<span class="">Nov 25, 2024</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant">
+<span class="">Argumentation (30), Synthesis (35), Composure (35)</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high text-outline font-label-sm text-[11px] font-semibold">
+                  Scheduled
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<span class="text-outline font-label-md text-label-md">Unlocks Nov 10</span>
+</td>
+</tr>
+<!-- Row 3: CA3 -->
+<tr class="hover:bg-surface-container-low transition-colors duration-100">
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-title-sm text-body-sm text-on-surface font-semibold">CA3: Comprehensive Clinical Viva</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Technical depth + STAR behavioral trial</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-semibold text-on-surface">35%</td>
+<td class="py-3.5 px-4 text-on-surface-variant">Industry Alumni Board &amp; Career Dean</td>
+<td class="py-3.5 px-4 text-outline">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px]">calendar_today</span>
+<span class="">Dec 20, 2024</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant">
+<span class="">System Thinking (40), Problem Solving (30), Fit (30)</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high text-outline font-label-sm text-[11px] font-semibold">
+                  Scheduled
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<span class="text-outline font-label-md text-label-md">Unlocks Dec 1</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Rubric Assistance Note -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-sm mt-1">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Need guidance on the <strong>CA1 single-column format rubric</strong>? Book 15-minute TA office hours with Trainer Ananya Ghosh.
+          </p>
+</div>
+<a class="font-label-md text-label-md text-primary font-semibold hover:underline shrink-0 pl-7 md:pl-0" href="#">
+          Book Academic Consultation →
+        </a>
+</div>
+</section>
+</div>
+</div></main></div>
+
+</body></html>

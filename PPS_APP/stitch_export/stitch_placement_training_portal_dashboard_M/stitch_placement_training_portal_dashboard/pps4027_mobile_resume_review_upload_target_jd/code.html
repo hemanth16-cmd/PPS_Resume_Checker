@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-fixed-dim": "#a9cbe5", "inverse-on-surface": "#edf1f8", "tertiary-fixed": "#bbeecf", "on-secondary": "#ffffff", "error": "#ba1a1a", "surface-bright": "#f7f9ff", "background": "#f7f9ff", "secondary-fixed": "#c8e6ff", "surface-container": "#eaeef5", "inverse-surface": "#2c3136", "inverse-primary": "#a9cbe5", "surface-container-lowest": "#ffffff", "on-primary": "#ffffff", "on-error": "#ffffff", "surface-variant": "#dee3ea", "outline": "#72787d", "primary": "#315369", "on-tertiary-fixed-variant": "#204f38", "surface": "#f7f9ff", "sage-success-bg": "#ebf3ee", "on-primary-fixed-variant": "#284a60", "on-background": "#171c21", "crimson-alert": "#ba1a1a", "surface-container-high": "#e4e8ef", "on-secondary-fixed-variant": "#2b4a5f", "on-error-container": "#93000a", "surface-warm": "#fbfbfa", "secondary": "#436278", "surface-border": "#e6e4df", "on-tertiary": "#ffffff", "primary-container": "#4a6b82", "surface-canvas": "#f8f9fd", "primary-fixed": "#c8e6ff", "amber-warning": "#a87438", "surface-tint": "#416279", "crimson-alert-bg": "#ffdad6", "mist-blue": "#4a6b82", "on-surface-variant": "#42474c", "tertiary-container": "#427158", "text-secondary": "#42474c", "on-primary-fixed": "#001e2e", "mist-blue-hover": "#3b5a70", "sage-success": "#4e7d63", "on-surface": "#171c21", "on-primary-container": "#d0eaff", "surface-container-highest": "#dee3ea", "tertiary-fixed-dim": "#a0d2b3", "on-tertiary-container": "#c0f3d3", "secondary-container": "#c3e4fe", "surface-subtle": "#eceef2", "on-tertiary-fixed": "#002112", "surface-container-low": "#f0f4fb", "tertiary": "#2a5841", "secondary-fixed-dim": "#aacbe4", "surface-dim": "#d6dae1", "amber-warning-bg": "#fbf4ea", "on-secondary-fixed": "#001e2e", "on-secondary-container": "#47667c", "outline-variant": "#c2c7cd", "text-charcoal": "#1a1f24", "error-container": "#ffdad6" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin-mobile": "1.25rem", "margin": "3rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-sm": ["Manrope"], "headline-lg": ["Manrope"], "body-sm": ["Inter"], "display-lg": ["Manrope"], "metric-display": ["Manrope"], "title-sm": ["Manrope"], "headline-lg-mobile": ["Manrope"], "display-lg-mobile": ["Manrope"], "label-sm": ["Manrope"], "body-md": ["Inter"], "title-md": ["Manrope"], "body-lg": ["Inter"], "label-md": ["Manrope"], "headline-md": ["Manrope"] }, "fontSize": { "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }], "headline-lg": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-sm": ["0.8125rem", { "lineHeight": "1.25rem", "fontWeight": "400" }], "display-lg": ["3rem", { "lineHeight": "3.5rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "metric-display": ["2rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-sm": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "600" }], "headline-lg-mobile": ["1.625rem", { "lineHeight": "2.125rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-lg-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-md": ["0.9375rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "title-md": ["1.125rem", { "lineHeight": "1.625rem", "fontWeight": "600" }], "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }], "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{margin:0;padding:0;min-height:100%;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface-warm font-body-md text-body-md text-text-charcoal antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-warm/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0 flex-1"><button aria-label="Go back" class="w-11 h-11 -ml-space-xs flex items-center justify-center text-text-charcoal hover:text-mist-blue transition-colors focus:outline-none focus:ring-2 focus:ring-mist-blue rounded-lg" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[1.375rem]">arrow_back</span></button><div class="flex items-center gap-space-sm min-w-0"><img alt="Brand logo. - Primary color: #4a6b82
+- Font: newsreader
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1WqAYLoonOsSzjqBZ6MDAKqtxQaQdYulzo6_FQJcT0l9GahweFqOttsENyytNdlBKzqDolI459ydqm1qRADCWnCChZkwSeh-iu-emqLSgIqeRY63FtIc-ieK9eCDoBOvHVhQZXKZfD5YEMQ3cLYzojr9gbWEOW_Rh-7dIK1CUaQB_-IWAiJJe4lq8MMTg8jx3qOSSx5co2qSS-E-e53D0ubU1sMNXQD59dTby8f-thiUwxtAux_eVceNUn_"/><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-text-secondary truncate tracking-wider uppercase">PPS4027 Placement</span><h1 class="font-title-sm text-title-sm text-text-charcoal truncate">Ca1 Resume Review</h1></div></div></div><div class="flex items-center gap-space-xs flex-shrink-0 pl-space-xs"><div class="flex items-center gap-space-xs"><span class="hidden xs:inline font-label-md text-label-md text-text-charcoal max-w-[5.5rem] truncate text-right">Aarav Sharma</span><div class="relative flex items-center justify-center w-11 h-11"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VCeRE63oVixtIq0Sy8gyLrmYfrtj8YceXQu5875f-sRKPimUtlaDgtKEk_0eWeE5KYOa_BRRzEq8XM9ACUsI95-0yUIMiNkOBMiIE05ejB-hnDqFv4rjS6BY3Z7uhKMoQZZfASYHNFKzoxH2F8aEdJoGwMzudXzNmU-nGOFVSyOxK0ax9GjaYvQ2Y7mfgYYueHfAw91D9nHJFR4NBxxRMG9eiezfmN3adhlgxx6pAI3SBYuWuEOLG98rE"/><span class="absolute bottom-1 right-1 w-2.5 h-2.5 bg-sage-success rounded-full ring-2 ring-surface-warm"></span></div></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface-warm"><div class="flex flex-col w-full pb-10">
+<!-- Progress Tracker -->
+<section class="px-gutter-mobile pt-space-md pb-space-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-secondary">Stage 1 of 5</span>
+<span class="font-label-sm text-label-sm text-mist-blue font-medium">Resume setup</span>
+</div>
+<!-- 5-segment Progress Bar -->
+<div aria-label="Step 1 of 5" aria-valuemax="5" aria-valuemin="1" aria-valuenow="1" class="grid grid-cols-5 gap-1.5 w-full my-space-xs" role="progressbar">
+<div class="h-1.5 rounded-full bg-mist-blue transition-all duration-300"></div>
+<div class="h-1.5 rounded-full bg-surface-container-highest"></div>
+<div class="h-1.5 rounded-full bg-surface-container-highest"></div>
+<div class="h-1.5 rounded-full bg-surface-container-highest"></div>
+<div class="h-1.5 rounded-full bg-surface-container-highest"></div>
+</div>
+<!-- Step Sub-labels -->
+<div class="grid grid-cols-5 text-center mt-1">
+<span class="font-label-sm text-label-sm text-text-charcoal font-semibold truncate">Upload</span>
+<span class="font-label-sm text-label-sm text-text-secondary truncate opacity-75">Target JD</span>
+<span class="font-label-sm text-label-sm text-text-secondary truncate opacity-75">Consent</span>
+<span class="font-label-sm text-label-sm text-text-secondary truncate opacity-75">Analysis</span>
+<span class="font-label-sm text-label-sm text-text-secondary truncate opacity-75">Report</span>
+</div>
+</section>
+<!-- Editorial Page Title -->
+<section class="px-gutter-mobile pt-space-sm pb-space-md">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container text-mist-blue mb-space-xs">
+<span class="material-symbols-outlined text-[14px]">school</span>
+<span class="font-label-sm text-label-sm font-semibold">PPS4027 Formative Review</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-text-charcoal font-bold tracking-tight">Upload your resume</h2>
+<p class="font-body-md text-body-md text-text-secondary mt-1">
+      Upload a PDF or DOCX to check format, structure, ATS readability, and role alignment.
+    </p>
+</section>
+<div class="px-gutter-mobile space-y-space-lg">
+<!-- Main Interactive Upload Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col items-center text-center relative overflow-hidden transition-all duration-200" id="drop-zone">
+<!-- File state icon -->
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center mb-space-md text-mist-blue" id="upload-icon-container">
+<span class="material-symbols-outlined text-[2rem]">upload_file</span>
+</div>
+<!-- State: Empty Upload -->
+<div class="flex flex-col items-center w-full" id="empty-state">
+<h3 class="font-title-md text-title-md text-text-charcoal font-semibold">Drop your resume here</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1 mb-space-lg">PDF or DOCX · Maximum 5 MB</p>
+<label class="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-space-lg py-3 rounded-lg bg-surface-container text-text-charcoal hover:bg-surface-container-high transition-colors cursor-pointer min-h-[44px] shadow-sm font-label-md text-label-md" for="resume-input">
+<span class="material-symbols-outlined text-[1.25rem] text-mist-blue">folder_open</span>
+<span>Choose file</span>
+</label>
+<input accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document" class="sr-only" id="resume-input" type="file"/>
+</div>
+<!-- State: File Selected (Hidden initially) -->
+<div class="hidden flex-col items-center w-full" id="file-state">
+<div class="w-full bg-surface-container-low rounded-lg p-space-md flex items-center justify-between text-left mb-space-md">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded bg-mist-blue text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[1.25rem]">description</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-text-charcoal truncate font-semibold" id="file-name">Resume_Aarav_Sharma_2025.pdf</p>
+<p class="font-body-sm text-body-sm text-text-secondary" id="file-size">1.2 MB · Verified PDF</p>
+</div>
+</div>
+<button aria-label="Remove uploaded file" class="text-text-secondary hover:text-error p-1 transition-colors" id="remove-file-btn" type="button">
+<span class="material-symbols-outlined text-[1.25rem]">close</span>
+</button>
+</div>
+<button class="font-label-sm text-label-sm text-mist-blue font-semibold hover:underline" id="change-file-btn" type="button">
+          Select a different document
+        </button>
+</div>
+<!-- Academic Trust Micro-badge -->
+<div class="mt-space-lg pt-space-md flex items-center justify-center gap-1.5 text-text-secondary w-full">
+<span class="material-symbols-outlined text-[1rem] text-mist-blue flex-shrink-0">verified_user</span>
+<span class="font-body-sm text-body-sm text-text-secondary text-left">Your file is used solely for PPS4027 formative evaluation.</span>
+</div>
+</div>
+<!-- Section: Target Role (Optional) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-text-charcoal font-semibold">Target role (optional)</h3>
+<span class="font-label-sm text-label-sm text-text-secondary">Stage alignment</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mt-0.5">
+          Calibrating against a specific role improves keyword and alignment heuristics.
+        </p>
+</div>
+<!-- Target Job Title Input -->
+<div class="space-y-1.5">
+<label class="font-label-sm text-label-sm text-text-charcoal font-semibold block" for="target-title">Target Job Title</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-text-secondary text-[1.25rem]">work_outline</span>
+<input class="w-full pl-10 pr-10 py-2.5 rounded-lg bg-surface-container-low text-text-charcoal font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#4a6b82] transition-all duration-150" id="target-title" placeholder="e.g. Data Analyst Intern" type="text" value="Data Analyst Intern"/>
+<button aria-label="Clear job title" class="absolute right-3 text-text-secondary hover:text-text-charcoal" id="clear-title-btn" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">cancel</span>
+</button>
+</div>
+</div>
+<!-- Collapsible Panel: Job Description -->
+<div class="rounded-lg bg-surface-container-low overflow-hidden transition-all duration-200" id="accordion-wrapper">
+<button aria-expanded="false" class="w-full px-space-md py-3 flex items-center justify-between text-left text-text-charcoal font-label-md text-label-md font-semibold hover:bg-surface-container transition-colors" id="accordion-toggle" type="button">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[1.25rem] text-mist-blue">format_quote</span>
+<span>Paste target job description</span>
+</span>
+<span class="material-symbols-outlined text-text-secondary transition-transform duration-200" id="accordion-icon">expand_more</span>
+</button>
+<div class="hidden px-space-md pb-space-md pt-1 space-y-space-sm" id="accordion-content">
+<div class="relative">
+<textarea class="w-full p-3 rounded-lg bg-surface-container-lowest text-text-charcoal font-body-md text-body-md focus:outline-none focus:shadow-[0_0_0_2px_#4a6b82] transition-all resize-none" id="jd-textarea" maxlength="2500" placeholder="Paste job requirements, required competencies, or employer expectations here..." rows="4"></textarea>
+<div class="flex justify-end mt-1">
+<span class="font-label-sm text-label-sm text-text-secondary" id="char-counter">0 / 2,500 characters</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Seed Skills Pills -->
+<div class="pt-1">
+<span class="font-label-sm text-label-sm text-text-secondary block mb-2 font-medium">Quick-add key competencies:</span>
+<div class="flex flex-wrap gap-1.5" id="skill-pills">
+<button class="skill-pill inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-text-charcoal hover:bg-surface-container-high transition-colors text-label-sm font-label-sm" data-skill="Python" type="button">
+<span>+</span><span>Python</span>
+</button>
+<button class="skill-pill inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-text-charcoal hover:bg-surface-container-high transition-colors text-label-sm font-label-sm" data-skill="SQL" type="button">
+<span>+</span><span>SQL</span>
+</button>
+<button class="skill-pill inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-text-charcoal hover:bg-surface-container-high transition-colors text-label-sm font-label-sm" data-skill="Data Analysis" type="button">
+<span>+</span><span>Data Analysis</span>
+</button>
+<button class="skill-pill inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-text-charcoal hover:bg-surface-container-high transition-colors text-label-sm font-label-sm" data-skill="Tableau" type="button">
+<span>+</span><span>Tableau</span>
+</button>
+<button class="skill-pill inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-text-charcoal hover:bg-surface-container-high transition-colors text-label-sm font-label-sm" data-skill="ETL Pipelines" type="button">
+<span>+</span><span>ETL Pipelines</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Privacy & Notice Preview Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center flex-shrink-0 text-mist-blue mt-0.5">
+<span class="material-symbols-outlined text-[1.125rem]">lock</span>
+</div>
+<div class="flex flex-col space-y-0.5 min-w-0">
+<h4 class="font-label-md text-label-md font-semibold text-text-charcoal">Pre-analysis checkpoint</h4>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+          You will review and confirm evaluation parameters in Step 3 before parsing begins. Your submission remains private within PPS4027.
+        </p>
+</div>
+</div>
+</div>
+<!-- Bottom Fixed-style Action Area -->
+<div class="mt-space-xl px-gutter-mobile flex flex-col items-center gap-3">
+<button class="w-full h-[50px] rounded-lg bg-mist-blue hover:bg-mist-blue-hover text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-2 shadow-sm transition-all duration-150 active:scale-[0.99]" id="continue-cta" type="button">
+<span>Continue to Consent</span>
+<span class="material-symbols-outlined text-[1.25rem]">arrow_forward</span>
+</button>
+<button class="text-text-secondary hover:text-text-charcoal font-label-md text-label-md py-2 min-h-[44px] flex items-center justify-center transition-colors" type="button">
+      Save draft &amp; exit
+    </button>
+</div>
+</div>
+<script>
+  (function() {
+    // Accordion interaction
+    const toggleBtn = document.getElementById('accordion-toggle');
+    const content = document.getElementById('accordion-content');
+    const icon = document.getElementById('accordion-icon');
+
+    if (toggleBtn && content && icon) {
+      toggleBtn.addEventListener('click', function() {
+        const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+        toggleBtn.setAttribute('aria-expanded', !isExpanded);
+        content.classList.toggle('hidden');
+        icon.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(180deg)';
+      });
+    }
+
+    // Textarea character count
+    const jdTextarea = document.getElementById('jd-textarea');
+    const charCounter = document.getElementById('char-counter');
+    if (jdTextarea && charCounter) {
+      jdTextarea.addEventListener('input', function() {
+        const length = jdTextarea.value.length;
+        charCounter.textContent = `${length.toLocaleString()} / 2,500 characters`;
+      });
+    }
+
+    // Clear Title button
+    const clearBtn = document.getElementById('clear-title-btn');
+    const titleInput = document.getElementById('target-title');
+    if (clearBtn && titleInput) {
+      clearBtn.addEventListener('click', function() {
+        titleInput.value = '';
+        titleInput.focus();
+      });
+    }
+
+    // File input & Drag-and-Drop handling
+    const fileInput = document.getElementById('resume-input');
+    const dropZone = document.getElementById('drop-zone');
+    const emptyState = document.getElementById('empty-state');
+    const fileState = document.getElementById('file-state');
+    const fileName = document.getElementById('file-name');
+    const fileSize = document.getElementById('file-size');
+    const removeFileBtn = document.getElementById('remove-file-btn');
+    const changeFileBtn = document.getElementById('change-file-btn');
+
+    function handleFile(file) {
+      if (!file) return;
+      fileName.textContent = file.name;
+      const sizeMb = (file.size / (1024 * 1024)).toFixed(2);
+      fileSize.textContent = `${sizeMb} MB · Ready for alignment`;
+      emptyState.classList.add('hidden');
+      fileState.classList.remove('hidden');
+      fileState.classList.add('flex');
+    }
+
+    if (fileInput) {
+      fileInput.addEventListener('change', function(e) {
+        if (e.target.files && e.target.files[0]) {
+          handleFile(e.target.files[0]);
+        }
+      });
+    }
+
+    if (removeFileBtn) {
+      removeFileBtn.addEventListener('click', function() {
+        if (fileInput) fileInput.value = '';
+        fileState.classList.add('hidden');
+        fileState.classList.remove('flex');
+        emptyState.classList.remove('hidden');
+      });
+    }
+
+    if (changeFileBtn && fileInput) {
+      changeFileBtn.addEventListener('click', function() {
+        fileInput.click();
+      });
+    }
+
+    // Drag-over styling
+    if (dropZone) {
+      ['dragenter', 'dragover'].forEach(eventName => {
+        dropZone.addEventListener(eventName, (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          dropZone.classList.add('bg-surface-container-low');
+        }, false);
+      });
+
+      ['dragleave', 'drop'].forEach(eventName => {
+        dropZone.addEventListener(eventName, (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          dropZone.classList.remove('bg-surface-container-low');
+        }, false);
+      });
+
+      dropZone.addEventListener('drop', (e) => {
+        const dt = e.dataTransfer;
+        const files = dt.files;
+        if (files && files[0]) {
+          handleFile(files[0]);
+        }
+      });
+    }
+
+    // Quick skills seed pills
+    const skillPills = document.querySelectorAll('.skill-pill');
+    skillPills.forEach(pill => {
+      pill.addEventListener('click', function() {
+        const skill = this.getAttribute('data-skill');
+        if (content.classList.contains('hidden')) {
+          content.classList.remove('hidden');
+          toggleBtn.setAttribute('aria-expanded', 'true');
+          icon.style.transform = 'rotate(180deg)';
+        }
+        if (jdTextarea) {
+          const currentVal = jdTextarea.value.trim();
+          jdTextarea.value = currentVal ? `${currentVal}\n• Required proficiency in ${skill}` : `• Required proficiency in ${skill}`;
+          jdTextarea.dispatchEvent(new Event('input'));
+        }
+        this.classList.add('bg-secondary-container', 'text-on-secondary-container');
+      });
+    });
+  })();
+</script></main></body></html>
